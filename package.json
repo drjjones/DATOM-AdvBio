@@ -8,7 +8,9 @@
     "preview": "astro preview --port 4321",
     "extract": "python3 scripts/extract-content.py",
     "lighthouse": "node scripts/lighthouse.mjs",
-    "screenshots": "node scripts/screenshots.mjs"
+    "screenshots": "node scripts/screenshots.mjs",
+    "fallbacks": "node scripts/render-fallbacks.mjs",
+    "check:no-webgl": "node scripts/check-no-webgl.mjs"
   },
   "keywords": [],
   "author": "",

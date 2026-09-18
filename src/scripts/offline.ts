@@ -28,10 +28,10 @@ function offerReload() {
   const text = document.createElement('span');
   text.textContent = 'A newer version of this site is ready.';
   const reload = document.createElement('button');
-  reload.type = 'button'; reload.className = 'btn primary'; reload.textContent = 'Reload';
+  reload.type = 'button'; reload.className = 'btn'; reload.textContent = 'Reload';
   reload.addEventListener('click', () => location.reload());
   const later = document.createElement('button');
-  later.type = 'button'; later.className = 'btn ghost'; later.textContent = 'Later';
+  later.type = 'button'; later.className = 'btn sec'; later.textContent = 'Later';
   later.addEventListener('click', () => toast.remove());
   toast.append(text, reload, later);
   document.body.append(toast);

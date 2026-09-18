@@ -131,10 +131,14 @@ export class Walkthrough {
     this.question.textContent = s.question;
     this.options.replaceChildren(...s.options.map((o, i) => {
       const b = document.createElement('button');
-      b.type = 'button'; b.className = 'btn'; b.dataset.option = String(i); b.textContent = o.text;
+      b.type = 'button'; b.className = 'choice'; b.dataset.option = String(i);
+      const idx = document.createElement('span'); idx.className = 'step-index'; idx.textContent = String.fromCharCode(65 + i); idx.setAttribute('aria-hidden', 'true');
+      const text = document.createElement('span'); text.textContent = o.text;
+      b.append(idx, text);
       return b;
     }));
     this.feedback.replaceChildren();
+    delete this.feedback.dataset.state;
     this.prevBtn.disabled = this.index === 0;
     this.nextBtn.textContent = this.index === STEPS.length - 1 ? 'Finish' : 'Next';
     history.replaceState(null, '', `#walkthrough-${this.index + 1}`);
@@ -151,6 +155,7 @@ export class Walkthrough {
     });
     const lead = document.createElement('strong');
     lead.textContent = right ? 'Right. ' : 'Not quite. ';
+    this.feedback.dataset.state = right ? 'right' : 'wrong';
     this.feedback.replaceChildren(lead, document.createTextNode(s.why));
   }
 }

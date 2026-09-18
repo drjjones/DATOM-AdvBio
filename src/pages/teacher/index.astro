@@ -4,37 +4,40 @@ import { units, course } from '../../lib/content';
 import { url } from '../../lib/url';
 ---
 <Layout title="Teacher" description="Presenter notes and answer keys for the Advanced Biology site." noindex>
-  <section class="page-head">
-    <p class="eyebrow">Teacher · not linked from navigation</p>
+  <section class="masthead">
+    <p class="k k-c">Teacher · not linked from navigation</p>
     <h1>Presenter notes</h1>
     <p class="lede">Presenter notes, answer keys, and timing arrive with each unit as it is built. What is here now is what the shell supports.</p>
   </section>
 
-  <section class="standard-block">
+  <section class="std">
+    <div class="drule" aria-hidden="true"></div>
     <h2>Presenting</h2>
-    <p>Press <kbd>P</kbd> on any page, or use the Present button, to hide the navigation, raise the type to 20px, and show one section at a time. Arrow keys, page keys, space, the on-screen buttons, and a horizontal swipe move between sections. <kbd>Esc</kbd> exits. Every standard section has its own "Present this section" button and a stable link, so you can open a standard directly in presentation mode by adding <code>?present</code> to its address.</p>
-    <p>After a page has loaded once on a device, it and every asset it uses are cached by the service worker and open without a connection. Load the pages you plan to teach from while you still have wifi.</p>
-    <p>Dark is the default because projectors wash out light backgrounds. The theme toggle in the header switches to light and remembers the choice on that device.</p>
-    <p><a class="btn" href={url('/lab/carbon-allotropes/?present')}>Open the carbon allotropes gallery in presentation mode</a></p>
+    <p>Press <span class="mono">P</span> on any page, or use the Present button, to hide the navigation, raise the type to 20px, and show one section at a time. Arrow keys, page keys, space, the on-screen buttons, and a horizontal swipe move between sections. <span class="mono">Esc</span> exits. Every standard section has its own "Present this section" button and a stable link, so a standard can be opened directly in presentation mode by adding <span class="mono">?present</span> to its address.</p>
+    <p>After a page has loaded once on a device, it and every asset it uses are cached and open without a connection. Load the pages you plan to teach from while you still have wifi. When a newer version is published, the site offers a reload rather than forcing one.</p>
+    <p>Dark is the default because projectors wash out light backgrounds. The Paper button in the header switches environments and remembers the choice on that device.</p>
+    <a class="action" href={url('/lab/carbon-allotropes/?present')}>Open the carbon allotropes gallery in presentation mode</a>
   </section>
 
-  <section class="standard-block">
+  <section class="std">
+    <div class="drule" aria-hidden="true"></div>
     <h2>Exam weight by standard</h2>
     <p class="note">From each unit's Standards Teacher Copy. {course.grading}</p>
     {units.map((u) => (
-      <details>
-        <summary style="min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:600">Unit {u.number}: {u.title}</summary>
-        <table class="plain">
+      <details class="row">
+        <summary>Unit {u.nn}: {u.title}</summary>
+        <table class="ledger">
           <thead><tr><th scope="col">Standard</th><th scope="col">Exam items</th><th scope="col">Points</th></tr></thead>
-          <tbody>{u.standards.map((s) => <tr><td><span class="code" style={`--unit:${u.accent}`}>{s.code}</span> {s.title}{s.central && ' (central idea)'}</td><td>{s.exam?.examItems ?? ''}</td><td>{s.exam?.points ?? ''}</td></tr>)}</tbody>
+          <tbody>{u.standards.map((s) => <tr><td><span class="status-box unit" style={`--unit:${u.accent}`}>{s.code}</span> <span class="body">{s.title}{s.central && ' (central idea)'}</span></td><td>{s.exam?.examItems ?? ''}</td><td>{s.exam?.points ?? ''}</td></tr>)}</tbody>
         </table>
       </details>
     ))}
   </section>
 
-  <section class="standard-block">
+  <section class="std">
+    <div class="drule" aria-hidden="true"></div>
     <h2>This device</h2>
-    <p>Student ticks and progress dots live in this browser's storage only. Clearing them here does not affect any other device.</p>
-    <button class="btn" type="button" data-reset-progress>Clear progress on this device</button>
+    <p>Student ticks and progress squares live in this browser's storage only. Clearing them here does not affect any other device.</p>
+    <button class="btn sec" type="button" data-reset-progress>Clear progress on this device</button>
   </section>
 </Layout>

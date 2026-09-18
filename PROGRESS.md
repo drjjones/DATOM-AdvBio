@@ -19,10 +19,19 @@ Interactive teaching site for Advanced Biology. This file tracks the site only; 
 - Reference build `/lab/carbon-allotropes/`: six models generated at runtime from published geometry (`src/lab/carbon/structures.ts`), one WebGL context painting six scissor viewports (`viewer.ts`), drag to rotate, tap an atom for its bond count, expand for full orbit and pinch or wheel zoom, play/pause for rotation, six-step walkthrough with one sentence and one prediction question per step (`walkthrough.ts`), deep links `#model-c60` and `#walkthrough-3`, presentation mode forwards arrow keys to the walkthrough.
 - Geometry verified numerically (`node --experimental-strip-types` against `structures.ts`): diamond 87 atoms, every bond 1.545 Å; graphite 176 atoms in three AB-stacked sheets, bonds 1.421 Å, 14 dashed interlayer lines each exactly 3.354 Å; graphene 94 atoms; C60 60 atoms, 90 bonds, all threefold, 12 pentagons covering all 60 atoms, 60 coral pentagon edges and 30 gray; (10,0) tube 140 atoms after trimming the cell-boundary spikes, mean radius 3.917 Å (expected 3.917), bonds 1.416 to 1.421 Å; amorphous 111 atoms, 50 fourfold, 42 threefold, 19 twofold, mean bond 1.527 Å.
 
+### 2026-09-17, later: redesign on the DATOM design language, and still-image fallbacks
+
+Jordan's review of the first build: the models were not visible on the device used, and the style looked generic. Both addressed.
+
+- Redesign on DATOM Design Language v1.1 (tokens verbatim from `DATOM-website/tokens.css`; components from `design-v1.1.css` and the v1.1 spec): letterhead header with the double rule and bordered edges, the DATOM mark as the seal, Spectral display type, Inter body, IBM Plex Mono data labels, filled-ink stamp buttons, hairline ledger tables, leader-dot spec lines, boxed status labels, flat hairline documents, zero radius, no shadows. Fonts self-hosted (nine woff2 files, 164 KB, latin subsets). Two environments from one component set: dark by default for the projector, paper on the toggle, remembered per device.
+- Home page is a ledger of ten rows (index, swatch, title, central idea, Mader chapters, five progress squares). Unit pages open each standard with a double rule, the code as a boxed label, and the reading as a mono kicker. Standard pages use a ruled checklist and leader-dot spec lines. Walkthrough answers are bordered rows with a square letter index; feedback carries a signal or contradiction rule.
+- Still-image fallbacks: `npm run fallbacks` renders each carbon model to `public/lab/carbon/*.webp` (about 30 KB each) from the built page in `?render=<model>` mode. Every tile shows its still first; the renderer hides it the moment a WebGL context exists. If the browser refuses one, the stills stay, a notice explains, and expand plus walkthrough still work. Verified with `npm run check:no-webgl` (Chrome with 3D APIs disabled): notice shown, stills visible, no script failure.
+- Verified: Lighthouse 100 / 100 / 100 on all six route types after the redesign; house-voice sweep clean; console clean in both environments; base-path build resolves fonts and the mark under `/DATOM-AdvBio/`.
+
 ### Next
 
 - Jordan settled the three decisions below on 2026-09-17. The reference page itself is live for review; Unit 1 starts once it is approved.
-- Unit 1 (water), one standard at a time, following the unit page spec with the "I can" checklist in the ladder slot.
+- Jordan reviews the redesign. Then Unit 1 (water), one standard at a time, in the same vocabulary.
 - Unit 1 (water), following the unit page spec, one standard at a time.
 
 ### Decisions (Jordan, 2026-09-17)

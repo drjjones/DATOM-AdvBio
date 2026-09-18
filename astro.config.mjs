@@ -29,8 +29,8 @@ function coursePwa() {
             start_url: base,
             scope: base,
             display: 'standalone',
-            background_color: '#0f1216',
-            theme_color: '#0f1216',
+            background_color: '#101823',
+            theme_color: '#101823',
             icons: [{ src: `${base}icon.svg`, sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],
           },
           workbox: {

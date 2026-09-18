@@ -1,78 +1,86 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { url } from '../../lib/url';
 const models = [
-  { id: 'diamond', name: 'Diamond', subtitle: 'Four bonds per carbon, sp3' },
-  { id: 'graphite', name: 'Graphite', subtitle: 'Three sheets, weakly stacked' },
-  { id: 'graphene', name: 'Graphene', subtitle: 'A single sheet, one atom thick' },
-  { id: 'c60', name: 'C60 fullerene', subtitle: 'Sixty carbons, twelve pentagons' },
-  { id: 'nanotube', name: '(10,0) carbon nanotube', subtitle: 'Graphene rolled into a tube, joined edge to edge' },
-  { id: 'amorphous', name: 'Amorphous carbon', subtitle: 'No repeating pattern, colored by bond count' },
+  { id: 'diamond', kicker: 'Crystal · sp3', name: 'Diamond', subtitle: 'Four bonds per carbon' },
+  { id: 'graphite', kicker: 'Layered · sp2', name: 'Graphite', subtitle: 'Three sheets, weakly stacked' },
+  { id: 'graphene', kicker: 'Sheet · sp2', name: 'Graphene', subtitle: 'A single sheet, one atom thick' },
+  { id: 'c60', kicker: 'Molecule · sp2', name: 'C60 fullerene', subtitle: 'Sixty carbons, twelve pentagons' },
+  { id: 'nanotube', kicker: 'Tube · sp2', name: '(10,0) carbon nanotube', subtitle: 'Graphene rolled into a tube, joined edge to edge' },
+  { id: 'amorphous', kicker: 'Network · mixed', name: 'Amorphous carbon', subtitle: 'No repeating pattern, colored by bond count' },
 ];
 ---
-<Layout title="Carbon allotropes" description="Six carbon allotropes from real coordinates: diamond, graphite, graphene, C60, a (10,0) nanotube, and amorphous carbon, with a six step walkthrough." accent="#9b6be0" bodyClass="lab-carbon">
+<Layout title="Carbon allotropes" description="Six carbon allotropes from real coordinates: diamond, graphite, graphene, C60, a (10,0) nanotube, and amorphous carbon, with a six step walkthrough." bodyClass="lab-carbon">
   <canvas id="gl" class="gl-backdrop" aria-hidden="true"></canvas>
 
-  <section class="page-head" data-section id="intro">
-    <p class="eyebrow">Lab · reference build</p>
+  <section class="masthead" data-section id="intro">
+    <p class="k k-c">Lab · reference build</p>
     <h1>Carbon allotropes</h1>
     <p class="lede">Same element, six materials. The only thing that changes is how each carbon bonds to its neighbors.</p>
     <div class="toolbar">
-      <button class="btn" type="button" data-play aria-pressed="true">
+      <button class="btn sec" type="button" data-play aria-pressed="true">
         <svg viewBox="0 0 24 24" aria-hidden="true" data-icon="pause"><path d="M8 5v14M16 5v14"/></svg>
         <svg viewBox="0 0 24 24" aria-hidden="true" data-icon="play" hidden><path d="M7 4l12 8-12 8z"/></svg>
         <span data-label>Pause rotation</span>
       </button>
-      <button class="btn primary" type="button" data-start-walkthrough>Start walkthrough</button>
-      <button class="btn ghost" type="button" data-present-section="gallery">Present the gallery</button>
+      <button class="btn" type="button" data-start-walkthrough>Start walkthrough</button>
+      <button class="btn sec" type="button" data-present-section="gallery">Present the gallery</button>
     </div>
     <ul class="legend" aria-label="Color key">
-      <li><span class="swatch" style="background:#9b6be0"></span>Four bonds (sp3)</li>
-      <li><span class="swatch" style="background:#5fb3b3"></span>Three bonds (sp2)</li>
+      <li><span class="swatch" style="background:#9b6be0"></span>Four bonds, sp3</li>
+      <li><span class="swatch" style="background:#5fb3b3"></span>Three bonds, sp2</li>
       <li><span class="swatch" style="background:#e0b04f"></span>Two or fewer</li>
       <li><span class="swatch" style="background:#f2785c"></span>Pentagon in C60</li>
       <li class="hint">Drag to rotate. Tap an atom for its bond count. Expand a model for full orbit and zoom (pinch, the zoom buttons, or Ctrl with the wheel).</li>
     </ul>
+    <p class="notice" data-webgl-notice hidden role="status">Three-dimensional graphics are turned off in this browser, which Lockdown Mode or a disabled graphics processor will do. Each model is shown as a still image, and the walkthrough still works.</p>
   </section>
 
   <section class="gallery" id="gallery" data-section aria-label="Six carbon allotropes">
-    {models.map((m) => (
+    {models.map((m, i) => (
       <article class="tile" data-model={m.id} data-no-swipe>
-        <div class="tile-view" data-view role="img" aria-label={`Rotating three-dimensional model of ${m.name}. Drag to rotate; tap an atom for its bond count.`}></div>
-        <div class="atom-label" data-atom-label hidden></div>
+        <div class="tile-view" data-view role="img" aria-label={`Rotating three-dimensional model of ${m.name}. Drag to rotate; tap an atom for its bond count.`}>
+          <img class="tile-fallback" src={url(`/lab/carbon/${m.id}.webp`)} alt="" width="1200" height="900" decoding="async" loading={i < 3 ? 'eager' : 'lazy'} />
+        </div>
+        <div class="atom-label mono" data-atom-label hidden></div>
         <div class="tile-caption">
           <div class="grow">
+            <p class="k">{m.kicker}</p>
             <h2>{m.name}</h2>
-            <p>{m.subtitle} <span class="count" data-count></span></p>
+            <p class="sub">{m.subtitle}</p>
+            <p class="count" data-count></p>
             <ul class="facts" data-facts></ul>
           </div>
-          <button class="btn icon" type="button" data-expand aria-label={`Expand ${m.name}`}>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-          </button>
-          <div class="zoom" role="group" aria-label="Zoom">
-            <button class="btn icon" type="button" data-zoom="in" aria-label={`Zoom in on ${m.name}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-            <button class="btn icon" type="button" data-zoom="out" aria-label={`Zoom out of ${m.name}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+          <div class="tile-tools">
+            <button class="btn sec icon" type="button" data-expand aria-label={`Expand ${m.name}`}>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+            <div class="zoom" role="group" aria-label="Zoom">
+              <button class="btn sec icon" type="button" data-zoom="in" aria-label={`Zoom in on ${m.name}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              <button class="btn sec icon" type="button" data-zoom="out" aria-label={`Zoom out of ${m.name}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+            </div>
+            <button class="btn sec" type="button" data-close>Close</button>
           </div>
-          <button class="btn" type="button" data-close>Close</button>
         </div>
       </article>
     ))}
 
     <aside class="walkthrough" id="walkthrough" hidden data-present-capture aria-label="Walkthrough">
-      <div class="wt-head"><span data-wt-counter>Step 1 of 6</span><span aria-hidden="true">·</span><strong data-wt-name></strong></div>
+      <div class="wt-head"><span class="k k-c" data-wt-counter>Step 1 of 6</span><span class="k" data-wt-name></span></div>
       <p class="wt-sentence" data-wt-sentence></p>
-      <p class="wt-question"><span class="pill">Predict</span> <span data-wt-question></span></p>
+      <p class="wt-question"><span class="status-box signal">Predict</span> <span data-wt-question></span></p>
       <div class="wt-options" data-wt-options role="group" aria-label="Answer choices"></div>
       <p class="wt-feedback" data-wt-feedback aria-live="polite"></p>
       <div class="wt-nav">
-        <button class="btn" type="button" data-wt-prev>Previous</button>
-        <button class="btn primary" type="button" data-wt-next>Next</button>
+        <button class="btn sec" type="button" data-wt-prev>Previous</button>
+        <button class="btn" type="button" data-wt-next>Next</button>
         <span class="grow"></span>
-        <button class="btn ghost" type="button" data-wt-exit>Exit walkthrough</button>
+        <button class="btn sec" type="button" data-wt-exit>Exit walkthrough</button>
       </div>
     </aside>
   </section>
 
-  <p class="source">Geometry generated from published lattice constants: diamond a = 0.3567 nm; graphite a = 0.2461 nm, interlayer 0.3354 nm; C60 truncated icosahedron of radius 0.355 nm; (10,0) tube rolled from the graphene lattice. Amorphous carbon is a seeded random network, not a measured structure.</p>
+  <p class="note source">Geometry generated from published lattice constants: diamond a = 0.3567 nm; graphite a = 0.2461 nm, interlayer 0.3354 nm; C60 truncated icosahedron of radius 0.355 nm; (10,0) tube rolled from the graphene lattice. Amorphous carbon is a seeded random network, not a measured structure.</p>
 
   <script>
     import '../../lab/carbon/main';
@@ -81,50 +89,68 @@ const models = [
 
 <style>
   .gl-backdrop { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
-  .toolbar { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.4rem 0 1.2rem; }
-  .legend { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.3rem; color: var(--fg-muted); font-size: 0.95rem; align-items: center; }
-  .legend li { display: flex; align-items: center; gap: 0.5rem; min-height: 28px; }
-  .legend .swatch { width: 14px; height: 14px; border-radius: 50%; flex: none; }
-  .legend .hint { flex-basis: 100%; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s2) 0 var(--s4); }
+  .legend { list-style: none; padding: var(--s3) 0; margin: 0 0 var(--s4); display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-family: var(--font-data); font-size: 0.75rem; letter-spacing: 0.04em; color: var(--muted); }
+  .legend li { display: flex; align-items: center; gap: var(--s2); min-height: 24px; }
+  .legend .swatch { width: 10px; height: 10px; flex: none; }
+  .legend .hint { flex-basis: 100%; font-family: var(--font-body); letter-spacing: 0; font-size: 0.875rem; color: var(--faint); }
+  .notice { border-left: 2px solid var(--verdict-mixed); padding: var(--s2) var(--s4); color: var(--ink); font-size: 0.9rem; max-width: 68ch; }
+  .source { margin-top: var(--s6); }
 
-  .gallery { position: relative; display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .gallery { position: relative; display: grid; gap: var(--s4); grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @media (max-width: 899px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  .tile { position: relative; display: flex; flex-direction: column; min-height: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: transparent; }
-  .tile-view { position: relative; aspect-ratio: 4 / 3; touch-action: pan-y; cursor: grab; }
+  .tile { position: relative; display: flex; flex-direction: column; min-height: 0; border: 1px solid var(--line); background: transparent; }
+  .tile-view { position: relative; aspect-ratio: 4 / 3; touch-action: pan-y; cursor: grab; overflow: hidden; }
   .tile-view:active { cursor: grabbing; }
-  .tile-caption { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.8rem 1rem 0.9rem; border-top: 1px solid var(--line); background: var(--bg-card); }
+  .tile-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+  .gallery[data-webgl="on"] .tile-fallback { display: none; }
+  .tile-caption { display: flex; align-items: flex-start; gap: var(--s3); padding: var(--s3) var(--s4) var(--s4); border-top: 1px solid var(--line); background: var(--paper); }
   .tile-caption .grow { flex: 1; min-width: 0; }
-  .tile-caption h2 { font-size: 1.12rem; margin: 0 0 0.15rem; }
-  .tile-caption p { margin: 0; color: var(--fg-muted); font-size: 0.92rem; }
-  .tile-caption .count { display: block; color: var(--fg-faint); }
-  .facts { display: none; list-style: none; padding: 0; margin: 0.7rem 0 0; color: var(--fg-muted); font-size: 0.97rem; gap: 0.3rem; }
-  .facts li { position: relative; padding-left: 1rem; }
-  .facts li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-  .atom-label { position: absolute; z-index: 2; transform: translate(-50%, calc(-100% - 14px)); padding: 0.35rem 0.65rem; border-radius: 8px; background: var(--bg-elev); border: 1px solid var(--line); box-shadow: var(--shadow); font-size: 0.9rem; white-space: nowrap; pointer-events: none; }
-  .atom-label[hidden] { display: none; }
+  .tile-caption .k { margin: 0 0 var(--s1); }
+  .tile-caption h2 { font-size: 1.2rem; margin: 0 0 var(--s1); }
+  .tile-caption .sub { margin: 0; font-size: 0.875rem; color: var(--muted); }
+  .tile-caption .count { margin: var(--s1) 0 0; font-family: var(--font-data); font-size: 0.6875rem; letter-spacing: 0.04em; color: var(--faint); }
+  .tile-tools { display: flex; gap: var(--s2); align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .facts { display: none; list-style: none; padding: 0; margin: var(--s3) 0 0; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--muted); }
+  .facts li { padding: var(--s2) 0; border-bottom: 1px solid var(--line); }
+  .atom-label { position: absolute; z-index: 2; transform: translate(-50%, calc(-100% - 12px)); padding: 4px 8px; background: var(--paper); border: 1px solid var(--ink); color: var(--ink); font-size: 0.6875rem; letter-spacing: 0.04em; white-space: nowrap; pointer-events: none; }
   [data-close], .zoom { display: none; }
-  .gallery.is-focused .tile.is-focus .zoom { display: flex; gap: 0.4rem; }
 
   .gallery.is-focused .tile:not(.is-focus) { display: none; }
   .gallery.is-focused .tile.is-focus { grid-column: 1 / -1; }
   .gallery.is-focused .tile.is-focus .tile-view { aspect-ratio: auto; height: clamp(280px, 44vh, 680px); touch-action: none; }
-  .gallery.is-focused .tile.is-focus .facts { display: grid; }
+  .gallery.is-focused .tile.is-focus .facts { display: block; }
   .gallery.is-focused .tile.is-focus [data-expand] { display: none; }
   .gallery.is-focused .tile.is-focus [data-close] { display: inline-flex; }
+  .gallery.is-focused .tile.is-focus .zoom { display: flex; gap: var(--s2); }
   html.presenting .gallery.is-focused .tile.is-focus .tile-view { height: clamp(300px, 46vh, 760px); }
 
-  .walkthrough { grid-column: 1 / -1; display: grid; gap: 0.8rem; padding: 1.2rem 1.4rem; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); }
+  /* walkthrough: the double-bordered document panel */
+  .walkthrough { grid-column: 1 / -1; position: relative; display: grid; gap: var(--s3); padding: var(--s5); background: var(--paper); border: 1px solid var(--ink); }
+  .walkthrough::before { content: ""; position: absolute; inset: 3px; border: 1px solid var(--ink); pointer-events: none; }
   .walkthrough[hidden] { display: none; }
-  .wt-head { display: flex; align-items: center; gap: 0.7rem; color: var(--fg-muted); font-size: 0.92rem; }
-  .wt-head strong { color: var(--fg); }
-  .wt-sentence { margin: 0; max-width: 72ch; font-size: clamp(1.15rem, 1.7vw, 1.5rem); font-weight: 600; line-height: 1.35; }
-  .wt-question { margin: 0; font-size: 1.05rem; max-width: 72ch; }
-  .wt-options { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-  .wt-options :global(.btn) { border-radius: var(--radius-sm); text-align: left; padding: 0.6rem 1rem; white-space: normal; font-weight: 500; }
-  .wt-options :global(.btn[data-state="correct"]) { border-color: var(--ok); box-shadow: inset 0 0 0 1px var(--ok); }
-  .wt-options :global(.btn[data-state="wrong"]) { border-color: var(--bad); opacity: 0.8; }
-  .wt-feedback { min-height: 1.5em; margin: 0; max-width: 72ch; color: var(--fg-muted); }
-  .wt-feedback :global(strong) { color: var(--fg); }
-  .wt-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+  .wt-head { display: flex; gap: var(--s4); align-items: center; flex-wrap: wrap; }
+  .wt-sentence { margin: 0; max-width: 72ch; font-family: var(--font-display); font-weight: 500; font-size: clamp(1.25rem, 1.9vw, 1.75rem); line-height: 1.3; color: var(--ink); }
+  .wt-question { margin: 0; max-width: 72ch; color: var(--ink); font-size: 1rem; display: flex; gap: var(--s3); align-items: center; flex-wrap: wrap; }
+  .wt-options { display: grid; gap: var(--s2); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .wt-options :global(.choice) { display: flex; align-items: flex-start; gap: var(--s3); text-align: left; padding: var(--s3) var(--s4); min-height: var(--touch-min); border: 1px solid var(--line-2); background: transparent; color: var(--ink); font: inherit; font-size: 0.95rem; line-height: 1.45; cursor: pointer; }
+  .wt-options :global(.choice:hover) { background: var(--nest); }
+  .wt-options :global(.choice[data-state="correct"]) { border-color: var(--signal); box-shadow: inset 0 0 0 1px var(--signal); }
+  .wt-options :global(.choice[data-state="wrong"]) { border-color: var(--verdict-contra); color: var(--muted); }
+  .wt-options :global(.step-index) { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; flex: none; border: 1px solid var(--ink); font-family: var(--font-data); font-size: 0.75rem; font-weight: 500; }
+  .wt-feedback { min-height: 1.5em; margin: 0; max-width: 72ch; color: var(--muted); padding-left: var(--s4); border-left: 2px solid transparent; }
+  .wt-feedback[data-state="right"] { border-left-color: var(--signal); }
+  .wt-feedback[data-state="wrong"] { border-left-color: var(--verdict-contra); }
+  .wt-feedback :global(strong) { color: var(--ink); }
+  .wt-nav { display: flex; flex-wrap: wrap; gap: var(--s2); align-items: center; }
   .wt-nav .grow { flex: 1; }
+</style>
+
+<style is:global>
+  /* Fallback-render mode (?render=<model>): a transparent page showing one still model for the renderer script. */
+  html.render-mode, html.render-mode body { background: transparent !important; }
+  html.render-mode .chrome, html.render-mode .masthead, html.render-mode .tile-caption, html.render-mode .walkthrough, html.render-mode .source, html.render-mode .atom-label { display: none !important; }
+  html.render-mode main { padding: 0; max-width: none; }
+  html.render-mode .gallery.is-focused .tile.is-focus { border: none; }
+  html.render-mode .gallery.is-focused .tile.is-focus .tile-view { width: 1200px; height: 900px; }
 </style>

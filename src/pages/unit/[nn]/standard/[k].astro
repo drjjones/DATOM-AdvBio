@@ -11,19 +11,25 @@ const prev = k > 1 ? unit.standards[k - 2] : null;
 const next = k < unit.standards.length ? unit.standards[k] : null;
 const exam = examSummary(unit, s);
 const examLine = exam.length ? exam.join(', ').replace(/, ([^,]*)$/, ' and $1') : '';
+const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
 ---
 <Layout title={`${s.code} ${s.title}`} description={s.description} accent={unit.accent} unitLabel={`Unit ${unit.number}`}>
-  <section class="page-head" data-section id={sectionId(s.code)}>
-    <p class="eyebrow"><a href={url(`/unit/${unit.nn}/`)} style="text-decoration:none">Unit {unit.number}: {unit.title}</a> · standard {k} of {unit.standards.length}</p>
-    <h1><span class="code" style="font-size:0.6em;display:block;margin-bottom:0.3rem">{s.code}{s.central && ' · central idea'}</span>{s.title}</h1>
+  <section class="masthead" data-section id={sectionId(s.code)}>
+    <p class="k k-c"><a href={url(`/unit/${unit.nn}/`)}>Unit {unit.nn} · {unit.title}</a> · standard {k} of {unit.standards.length}</p>
+    <div class="tags">
+      <span class="status-box unit">{s.code}</span>
+      {s.central && <span class="status-box signal">Central idea</span>}
+    </div>
+    <h1>{s.title}</h1>
     <p class="lede">{s.description}</p>
     <p class="note">The interactive model for this standard is in production.</p>
   </section>
 
-  <section class="standard-block" data-section id="i-can">
+  <section class="std" data-section id="i-can">
+    <div class="drule" aria-hidden="true"></div>
     <h2>What you should be able to do</h2>
     <p class="note">Tick what is true today. The blank ones are your study list. Ticks are stored on this device only.</p>
-    <ul class="ican">
+    <ul class="checklist">
       {s.iCan.map((line, i) => (
         <li>
           <input type="checkbox" id={`ican-${i}`} data-ican={`${s.code}:${i}`} />
@@ -33,24 +39,25 @@ const examLine = exam.length ? exam.join(', ').replace(/, ([^,]*)$/, ' and $1') 
     </ul>
   </section>
 
-  <section class="standard-block" data-section id="reading">
+  <section class="std" data-section id="reading">
+    <div class="drule" aria-hidden="true"></div>
     <h2>Reading and exam</h2>
-    <dl class="kv">
+    <div class="spec">
       {s.reading.map((r) => (
         <>
-          <dt>Mader {r.sections}</dt>
-          <dd>{r.sectionTitle ? `${r.sectionTitle}. ` : ''}Printed pages {r.printedPages} (PDF pages {r.pdfPages}).</dd>
+          <div class="spec-line"><span class="sl-label">Mader {r.sections}</span><span class="sl-fill"></span><span class="sl-value">pp. {r.printedPages} · PDF {r.pdfPages}</span></div>
+          {r.sectionTitle && <div class="spec-line"><span class="sl-label">Section</span><span class="sl-fill"></span><span class="sl-value body">{r.sectionTitle}</span></div>}
         </>
       ))}
-      {examLine && <><dt>On the unit exam</dt><dd>{examLine.charAt(0).toUpperCase() + examLine.slice(1)}.</dd></>}
-    </dl>
+      {examLine && <div class="spec-line"><span class="sl-label">On the unit exam</span><span class="sl-fill"></span><span class="sl-value body">{cap(examLine)}</span></div>}
+    </div>
     <div class="actions">
-      <button class="btn ghost" type="button" data-present-section={sectionId(s.code)}>Present this standard</button>
+      <button class="btn sec" type="button" data-present-section={sectionId(s.code)}>Present this standard</button>
     </div>
   </section>
 
   <nav class="pager" aria-label="Standards in this unit">
-    {prev ? <a class="btn" href={url(`/unit/${unit.nn}/standard/${k - 1}/`)}>Previous: {prev.code}</a> : <a class="btn" href={url(`/unit/${unit.nn}/`)}>Unit overview</a>}
-    {next ? <a class="btn" href={url(`/unit/${unit.nn}/standard/${k + 1}/`)}>Next: {next.code}</a> : <a class="btn" href={url(`/unit/${unit.nn}/#exam`)}>Exam blueprint</a>}
+    {prev ? <a class="action" href={url(`/unit/${unit.nn}/standard/${k - 1}/`)}>Previous, {prev.code}</a> : <a class="action" href={url(`/unit/${unit.nn}/`)}>Unit overview</a>}
+    {next ? <a class="action" href={url(`/unit/${unit.nn}/standard/${k + 1}/`)}>Next, {next.code}</a> : <a class="action" href={url(`/unit/${unit.nn}/#exam`)}>Exam blueprint</a>}
   </nav>
 </Layout>

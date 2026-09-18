@@ -1,22 +1,24 @@
-const KEY = 'ab:theme';
+/** Environment toggle: dark (projector default) or paper (DATOM's public default). Remembered per device. */
+const KEY = 'ab:env';
 const html = document.documentElement;
+type Env = 'dark' | 'paper';
 
-function apply(theme: 'dark' | 'light') {
-  html.setAttribute('data-theme', theme);
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#0f1216' : '#f4f6f9');
-  document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) => {
-    b.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-    b.querySelector<SVGElement>('[data-icon="moon"]')!.hidden = theme !== 'dark';
-    b.querySelector<SVGElement>('[data-icon="sun"]')!.hidden = theme !== 'light';
+function apply(env: Env) {
+  if (env === 'dark') html.setAttribute('data-env', 'dark'); else html.removeAttribute('data-env');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', env === 'dark' ? '#101823' : '#F7F9FA');
+  const next: Env = env === 'dark' ? 'paper' : 'dark';
+  document.querySelectorAll<HTMLButtonElement>('[data-env-toggle]').forEach((b) => {
+    b.setAttribute('aria-label', `Switch to the ${next} environment`);
+    const label = b.querySelector('[data-env-label]');
+    if (label) label.textContent = next === 'paper' ? 'Paper' : 'Dark';
   });
 }
 
-apply((html.getAttribute('data-theme') as 'dark' | 'light') || 'dark');
+apply(html.hasAttribute('data-env') ? 'dark' : 'paper');
 
 document.addEventListener('click', (e) => {
-  const btn = (e.target as HTMLElement).closest('[data-theme-toggle]');
-  if (!btn) return;
-  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  if (!(e.target as HTMLElement).closest('[data-env-toggle]')) return;
+  const next: Env = html.hasAttribute('data-env') ? 'paper' : 'dark';
   apply(next);
-  try { localStorage.setItem(KEY, next); } catch { /* private mode: theme lasts for the page only */ }
+  try { localStorage.setItem(KEY, next); } catch { /* storage blocked: the choice lasts for the page only */ }
 });
