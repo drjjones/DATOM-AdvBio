@@ -22,14 +22,14 @@ Interactive teaching site for Advanced Biology. This file tracks the site only; 
 ### Next
 
 - Jordan approved the reference page and the three decisions below on 2026-09-17.
-- Create the GitHub repository, push, and confirm the Pages deployment.
+- Unit 1 (water), one standard at a time, following the unit page spec with the "I can" checklist in the ladder slot.
 - Unit 1 (water), following the unit page spec, one standard at a time.
 
 ### Decisions (Jordan, 2026-09-17)
 
 1. **Proficiency ladder.** The spec's 0 to 4 descriptors no longer exist in the course. Decided: the slot shows the standard's "I can" checklist (live on the standard pages); per-standard exam weight appears on the teacher page only.
 2. **Unit 7 reading map.** Decided: follow the latest Unit 7 draft. Verified against `U7_Homework_Reading_Schedule_Student.docx` (2026-09-03) and `U7_Session_Plans.docx` (2026-09-04); the one difference from the hand reconciliation was Mader 10.6, which the schedule assigns before the B7.4 session and reuses for B7.5. The JSON now carries both, and the `readingMapDerived` flag is off.
-3. **Hosting.** A public link under Jordan's own GitHub account with DATOM in the name, on GitHub Pages; no AI-tool branding on the site, in the repository, or in commits. The site is built with a base path (`SITE_BASE`) so it can live under `/<repository>/`; the workflow in `.github/workflows/deploy.yml` sets it from the repository name.
+3. **Hosting.** A public link under Jordan's own GitHub account with DATOM in the name, on GitHub Pages; no AI-tool branding on the site, in the repository, or in commits. Done 2026-09-17: repository `drjjones/DATOM-AdvBio` (public), live at https://drjjones.github.io/DATOM-AdvBio/ through the Actions workflow (first deploy run 35293501274). Commits are authored with Jordan's GitHub no-reply address. The site is built with a base path (`SITE_BASE`) so it can live under `/<repository>/`; the workflow in `.github/workflows/deploy.yml` sets it from the repository name.
 
 ### Where the book is ambiguous
 
