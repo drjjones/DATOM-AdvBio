@@ -21,7 +21,7 @@ Interactive teaching site for Advanced Biology. This file tracks the site only; 
 
 ### Next
 
-- Jordan approved the reference page and the three decisions below on 2026-09-17.
+- Jordan settled the three decisions below on 2026-09-17. The reference page itself is live for review; Unit 1 starts once it is approved.
 - Unit 1 (water), one standard at a time, following the unit page spec with the "I can" checklist in the ladder slot.
 - Unit 1 (water), following the unit page spec, one standard at a time.
 
