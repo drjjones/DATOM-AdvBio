@@ -1,0 +1,195 @@
+{
+  "number": 10,
+  "slug": "anatomy-and-physiology",
+  "nn": "10",
+  "title": "Anatomy and physiology",
+  "titleAsPrinted": "Anatomy and Physiology",
+  "folder": "unit-10-anatomy-physiology",
+  "accent": "#E06C8A",
+  "accentName": "tissue rose",
+  "centralIdea": "B10.1",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B10.1 to B10.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B10.1 (1), B10.2 (2), B10.3 (2), B10.4 (1), B10.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B10.1 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B10.1: the labeled negative-feedback loop"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B10.1 (the homeostasis passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-10-anatomy-physiology/01_Overview_and_Planning/U10_Standards_Student_Copy.docx",
+    "teacher": "../unit-10-anatomy-physiology/01_Overview_and_Planning/U10_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B10.1",
+      "title": "Homeostasis and feedback",
+      "titleAsPrinted": "Homeostasis and Feedback",
+      "central": true,
+      "description": "Students explain how the body maintains a stable internal environment.",
+      "iCan": [
+        "I can define homeostasis as a stable internal environment despite external change, and name a regulated variable (temperature, blood glucose, pH)",
+        "I can describe the feedback loop: a stimulus, a sensor, a control center, and an effector that produces a response",
+        "I can explain negative feedback (the response reverses the change toward a set point) with an example, such as sweating or shivering",
+        "I can distinguish negative from positive feedback (which amplifies the change), and explain the levels of organization from cells to systems"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2; SA 11; Part 3 CER; Part 4 Diagram",
+        "points": 44
+      },
+      "reading": [
+        {
+          "sections": "31.1 to 31.2",
+          "printedPages": "582 to 591",
+          "pdfPages": "601 to 610",
+          "chapter": 31,
+          "sectionTitle": "Types of Tissues"
+        },
+        {
+          "sections": "31.4",
+          "printedPages": "594 to 599",
+          "pdfPages": "613 to 618",
+          "chapter": 31,
+          "sectionTitle": "Homeostasis"
+        }
+      ]
+    },
+    {
+      "code": "B10.2",
+      "title": "The nervous system",
+      "titleAsPrinted": "The Nervous System",
+      "central": false,
+      "description": "Students explain how neurons carry and pass signals.",
+      "iCan": [
+        "I can label a neuron (dendrites receive, cell body, axon carries, axon terminals) and state that it carries electrical signals fast",
+        "I can explain that the resting potential is maintained by the sodium-potassium pump, and that a stimulus can trigger an action potential",
+        "I can describe the action potential as a rapid depolarization then repolarization that travels along the axon (all-or-none)",
+        "I can explain the synapse: the signal crosses to the next cell using a chemical neurotransmitter in the synaptic cleft"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q3, Q4, Q5; SA 12, 13",
+        "points": 16
+      },
+      "reading": [
+        {
+          "sections": "37.2 to 37.3",
+          "printedPages": "695 to 707",
+          "pdfPages": "714 to 726",
+          "chapter": 37,
+          "sectionTitle": "Nervous Tissue"
+        }
+      ]
+    },
+    {
+      "code": "B10.3",
+      "title": "Circulation and gas exchange",
+      "titleAsPrinted": "Circulation and Gas Exchange",
+      "central": false,
+      "description": "Students explain how the body transports materials and exchanges gases.",
+      "iCan": [
+        "I can describe the heart pumping blood through a double circulation (pulmonary and systemic) and name the chambers (atria, ventricles)",
+        "I can tell apart arteries (away from the heart), veins (back to the heart), and capillaries (exchange)",
+        "I can explain gas exchange: O2 diffuses from the alveoli into the blood and CO2 diffuses out, down their gradients",
+        "I can connect the system to cellular respiration: it delivers O2 and glucose and removes CO2"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q6, Q7; SA 14, 15",
+        "points": 14
+      },
+      "reading": [
+        {
+          "sections": "32.3",
+          "printedPages": "605 to 613",
+          "pdfPages": "624 to 632",
+          "chapter": 32,
+          "sectionTitle": "The Human Cardiovascular System"
+        },
+        {
+          "sections": "35.1 to 35.2",
+          "printedPages": "660 to 669",
+          "pdfPages": "679 to 688",
+          "chapter": 35,
+          "sectionTitle": "Gas-Exchange Surfaces"
+        }
+      ]
+    },
+    {
+      "code": "B10.4",
+      "title": "Digestion and nutrition",
+      "titleAsPrinted": "Digestion and Nutrition",
+      "central": false,
+      "description": "Students explain how food is broken down and absorbed.",
+      "iCan": [
+        "I can tell apart mechanical digestion (physical breakdown) from chemical digestion (enzymes breaking polymers into monomers)",
+        "I can trace food through the tract: mouth, stomach, small intestine, large intestine, and name a key step at each",
+        "I can explain that the small intestine is where most digestion and absorption occur, aided by villi that increase surface area",
+        "I can connect the absorbed monomers back to the macromolecules of Unit 2 and to fuel for respiration"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q8; SA 16",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "34.2 to 34.3",
+          "printedPages": "645 to 652",
+          "pdfPages": "664 to 671",
+          "chapter": 34,
+          "sectionTitle": "The Human Digestive System"
+        }
+      ]
+    },
+    {
+      "code": "B10.5",
+      "title": "The immune system",
+      "titleAsPrinted": "The Immune System",
+      "central": false,
+      "description": "Students explain how the body defends itself.",
+      "iCan": [
+        "I can tell apart innate immunity (fast, general: barriers, phagocytes, inflammation) from adaptive immunity (slower, specific)",
+        "I can explain that adaptive immunity recognizes specific antigens; B cells make antibodies and T cells help and kill infected cells",
+        "I can explain immune memory: memory cells respond faster and stronger next time, which is the basis of vaccination",
+        "I can describe a vaccine as a safe exposure that builds memory without causing the disease"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q9, Q10; SA 17",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "33.3 to 33.4",
+          "printedPages": "625 to 640",
+          "pdfPages": "644 to 659",
+          "chapter": 33,
+          "sectionTitle": "Innate Immune Defenses"
+        }
+      ]
+    }
+  ]
+}

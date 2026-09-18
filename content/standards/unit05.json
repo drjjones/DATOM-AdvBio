@@ -1,0 +1,181 @@
+{
+  "number": 5,
+  "slug": "photosynthesis",
+  "nn": "05",
+  "title": "Photosynthesis",
+  "titleAsPrinted": "Photosynthesis",
+  "folder": "unit-05-photosynthesis",
+  "accent": "#4CAF50",
+  "accentName": "chlorophyll green",
+  "centralIdea": "B5.4",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B5.1 to B5.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B5.1 (2), B5.2 (1), B5.3 (2), B5.4 (1), B5.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B5.4 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B5.1: the chloroplast with both stages placed, the light reactions, or the Calvin cycle"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B5.3 (the light-reaction passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-05-photosynthesis/01_Overview_and_Planning/U5_Standards_Student_Copy.docx",
+    "teacher": "../unit-05-photosynthesis/01_Overview_and_Planning/U5_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B5.1",
+      "title": "Overview of photosynthesis and the chloroplast",
+      "titleAsPrinted": "Overview of Photosynthesis and the Chloroplast",
+      "central": false,
+      "description": "Students explain what photosynthesis does and where it happens.",
+      "iCan": [
+        "I can write and explain the overall equation: carbon dioxide plus water plus light energy yields glucose (sugar) plus oxygen",
+        "I can explain that photosynthesis is redox that stores energy: CO2 is reduced to sugar and water is oxidized, the reverse electron direction from respiration",
+        "I can label chloroplast structure: the thylakoids (stacked into grana), the thylakoid space, and the stroma",
+        "I can name the two stages and where each happens: the light reactions in the thylakoid membranes, the Calvin cycle in the stroma"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2, Q8; SA 11, 12; Part 4 Diagram",
+        "points": 31
+      },
+      "reading": [
+        {
+          "sections": "7.1 to 7.2",
+          "printedPages": "115 to 119",
+          "pdfPages": "134 to 138",
+          "chapter": 7,
+          "sectionTitle": "Photosynthetic Organisms"
+        }
+      ]
+    },
+    {
+      "code": "B5.2",
+      "title": "Capturing light: pigments and the spectrum",
+      "titleAsPrinted": "Capturing Light: Pigments and the Spectrum",
+      "central": false,
+      "description": "Students explain how pigments capture light energy.",
+      "iCan": [
+        "I can describe visible light as part of the electromagnetic spectrum, with different wavelengths seen as different colors",
+        "I can explain that a pigment absorbs some wavelengths and reflects others, and that the reflected light is the color we see (leaves look green because chlorophyll reflects green)",
+        "I can identify chlorophyll a as the main pigment, and chlorophyll b and the carotenoids as accessory pigments that broaden the light captured",
+        "I can explain that pigments are organized into photosystems that funnel absorbed light energy to a reaction center"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q3; SA 13",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "7.3",
+          "printedPages": "119 to 120",
+          "pdfPages": "138 to 139",
+          "chapter": 7,
+          "sectionTitle": "Plants Convert Solar Energy"
+        }
+      ]
+    },
+    {
+      "code": "B5.3",
+      "title": "The light reactions",
+      "titleAsPrinted": "The Light Reactions",
+      "central": false,
+      "description": "Students explain how the light reactions turn light into chemical energy.",
+      "iCan": [
+        "I can explain that light excites electrons in photosystem II, and that water is split (photolysis) to replace them, releasing O2",
+        "I can trace the energized electrons from photosystem II down an electron transport chain to photosystem I, then to NADP+, forming NADPH",
+        "I can explain that the electron transport pumps H+ into the thylakoid space, and chemiosmosis through ATP synthase makes ATP",
+        "I can state the products of the light reactions (ATP, NADPH, and O2), and that the O2 you breathe comes from split water"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q4, Q5, Q9; SA 14, 15",
+        "points": 16
+      },
+      "reading": [
+        {
+          "sections": "7.3",
+          "printedPages": "120 to 123",
+          "pdfPages": "139 to 142",
+          "chapter": 7,
+          "sectionTitle": "Plants Convert Solar Energy"
+        }
+      ]
+    },
+    {
+      "code": "B5.4",
+      "title": "The Calvin cycle",
+      "titleAsPrinted": "The Calvin Cycle",
+      "central": true,
+      "description": "Students explain how the Calvin cycle builds sugar from CO2.",
+      "iCan": [
+        "I can state that the Calvin cycle runs in the stroma and uses the ATP and NADPH from the light reactions (it needs no light itself)",
+        "I can explain carbon fixation: the enzyme rubisco attaches CO2 to RuBP",
+        "I can explain reduction: ATP and NADPH convert the fixed carbon into G3P, a sugar",
+        "I can explain regeneration: most G3P rebuilds RuBP so the cycle continues, and that it takes three CO2 to make one net G3P (two G3P make one glucose)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q6, Q7; SA 16; Part 3 CER",
+        "points": 29
+      },
+      "reading": [
+        {
+          "sections": "7.4",
+          "printedPages": "123 to 125",
+          "pdfPages": "142 to 144",
+          "chapter": 7,
+          "sectionTitle": "Plants Fix Carbon Dioxide"
+        }
+      ]
+    },
+    {
+      "code": "B5.5",
+      "title": "C4 and CAM photosynthesis",
+      "titleAsPrinted": "C4 and CAM Photosynthesis",
+      "central": false,
+      "description": "Students explain adaptations that protect photosynthesis in hot, dry climates.",
+      "iCan": [
+        "I can explain photorespiration: when it is hot and dry, stomata close, O2 builds up, and rubisco fixes O2 instead of CO2, wasting energy and making no sugar",
+        "I can explain that C4 plants (corn, sugarcane) separate carbon fixation in space, fixing CO2 into a four-carbon molecule in one cell and running the Calvin cycle in another",
+        "I can explain that CAM plants (cacti, succulents) separate it in time, fixing carbon at night and running the Calvin cycle by day with stomata closed",
+        "I can connect both strategies to conserving water while still feeding the Calvin cycle CO2"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q10; SA 17",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "7.5",
+          "printedPages": "125 to 128",
+          "pdfPages": "144 to 147",
+          "chapter": 7,
+          "sectionTitle": "Other Types of Photosynthesis"
+        }
+      ]
+    }
+  ]
+}

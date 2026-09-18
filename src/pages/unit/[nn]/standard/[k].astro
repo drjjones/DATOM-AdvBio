@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { units, sectionId, examSummary, type Unit, type Standard } from '../../../../lib/content';
+import { url } from '../../../../lib/url';
+
+export function getStaticPaths() {
+  return units.flatMap((u) => u.standards.map((s, i) => ({ params: { nn: u.nn, k: String(i + 1) }, props: { unit: u, standard: s, k: i + 1 } })));
+}
+const { unit, standard: s, k } = Astro.props as { unit: Unit; standard: Standard; k: number };
+const prev = k > 1 ? unit.standards[k - 2] : null;
+const next = k < unit.standards.length ? unit.standards[k] : null;
+const exam = examSummary(unit, s);
+const examLine = exam.length ? exam.join(', ').replace(/, ([^,]*)$/, ' and $1') : '';
+---
+<Layout title={`${s.code} ${s.title}`} description={s.description} accent={unit.accent} unitLabel={`Unit ${unit.number}`}>
+  <section class="page-head" data-section id={sectionId(s.code)}>
+    <p class="eyebrow"><a href={url(`/unit/${unit.nn}/`)} style="text-decoration:none">Unit {unit.number}: {unit.title}</a> · standard {k} of {unit.standards.length}</p>
+    <h1><span class="code" style="font-size:0.6em;display:block;margin-bottom:0.3rem">{s.code}{s.central && ' · central idea'}</span>{s.title}</h1>
+    <p class="lede">{s.description}</p>
+    <p class="note">The interactive model for this standard is in production.</p>
+  </section>
+
+  <section class="standard-block" data-section id="i-can">
+    <h2>What you should be able to do</h2>
+    <p class="note">Tick what is true today. The blank ones are your study list. Ticks are stored on this device only.</p>
+    <ul class="ican">
+      {s.iCan.map((line, i) => (
+        <li>
+          <input type="checkbox" id={`ican-${i}`} data-ican={`${s.code}:${i}`} />
+          <label for={`ican-${i}`}>{line}</label>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="standard-block" data-section id="reading">
+    <h2>Reading and exam</h2>
+    <dl class="kv">
+      {s.reading.map((r) => (
+        <>
+          <dt>Mader {r.sections}</dt>
+          <dd>{r.sectionTitle ? `${r.sectionTitle}. ` : ''}Printed pages {r.printedPages} (PDF pages {r.pdfPages}).</dd>
+        </>
+      ))}
+      {examLine && <><dt>On the unit exam</dt><dd>{examLine.charAt(0).toUpperCase() + examLine.slice(1)}.</dd></>}
+    </dl>
+    <div class="actions">
+      <button class="btn ghost" type="button" data-present-section={sectionId(s.code)}>Present this standard</button>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="Standards in this unit">
+    {prev ? <a class="btn" href={url(`/unit/${unit.nn}/standard/${k - 1}/`)}>Previous: {prev.code}</a> : <a class="btn" href={url(`/unit/${unit.nn}/`)}>Unit overview</a>}
+    {next ? <a class="btn" href={url(`/unit/${unit.nn}/standard/${k + 1}/`)}>Next: {next.code}</a> : <a class="btn" href={url(`/unit/${unit.nn}/#exam`)}>Exam blueprint</a>}
+  </nav>
+</Layout>

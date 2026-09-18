@@ -1,0 +1,181 @@
+{
+  "number": 4,
+  "slug": "cellular-respiration",
+  "nn": "04",
+  "title": "Cellular respiration",
+  "titleAsPrinted": "Cellular Respiration",
+  "folder": "unit-04-cellular-respiration",
+  "accent": "#D9534F",
+  "accentName": "oxygen red",
+  "centralIdea": "B4.2",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B4.1 to B4.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B4.1 (3), B4.2 (1), B4.3 (1), B4.4 (1), B4.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B4.5 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B4.3: the mitochondrion with stages placed, or the electron transport chain"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B4.4 (the respiration passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-04-cellular-respiration/01_Overview_and_Planning/U4_Standards_Student_Copy.docx",
+    "teacher": "../unit-04-cellular-respiration/01_Overview_and_Planning/U4_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B4.1",
+      "title": "Redox and the overview of respiration",
+      "titleAsPrinted": "Redox and the Overview of Respiration",
+      "central": false,
+      "description": "Students explain how respiration releases energy through redox and name the stages.",
+      "iCan": [
+        "I can define oxidation (loss of electrons) and reduction (gain of electrons), and explain that electrons carry energy",
+        "I can identify NAD+ and FAD as electron carriers that become NADH and FADH2 and shuttle electrons to the electron transport chain",
+        "I can write and explain the overall equation: glucose plus oxygen yields carbon dioxide plus water plus ATP",
+        "I can name the three stages and where each happens, and label the mitochondrion (matrix, cristae, intermembrane space)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2; SA 11, 12, 13",
+        "points": 19
+      },
+      "reading": [
+        {
+          "sections": "8.1",
+          "printedPages": "130 to 132",
+          "pdfPages": "149 to 151",
+          "chapter": 8,
+          "sectionTitle": "Overview of Cellular Respiration"
+        }
+      ]
+    },
+    {
+      "code": "B4.2",
+      "title": "Glycolysis",
+      "titleAsPrinted": "Glycolysis",
+      "central": true,
+      "description": "Students explain how glycolysis begins to harvest energy from glucose.",
+      "iCan": [
+        "I can state that glycolysis splits one glucose (6 carbons) into two pyruvate (3 carbons)",
+        "I can explain that glycolysis happens in the cytoplasm and needs no oxygen, which is why it is universal and ancient",
+        "I can account for the energy: invest 2 ATP, make 4 (net 2 ATP) by substrate-level phosphorylation, plus 2 NADH",
+        "I can explain that the pyruvate and NADH carry energy on to the later stages (or to fermentation if no oxygen)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q3, Q4; SA 14",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "8.2",
+          "printedPages": "132 to 134",
+          "pdfPages": "151 to 153",
+          "chapter": 8,
+          "sectionTitle": "Outside the Mitochondria: Glycolysis"
+        }
+      ]
+    },
+    {
+      "code": "B4.3",
+      "title": "Pyruvate oxidation and the citric acid cycle",
+      "titleAsPrinted": "Pyruvate Oxidation and the Citric Acid Cycle",
+      "central": false,
+      "description": "Students explain how the citric acid cycle completes the oxidation of glucose.",
+      "iCan": [
+        "I can explain that pyruvate is oxidized to acetyl-CoA, releasing one CO2 and making one NADH per pyruvate",
+        "I can state that the citric acid cycle runs in the mitochondrial matrix",
+        "I can give the per-turn tally: 2 CO2, 3 NADH, 1 FADH2, and 1 ATP, with two turns per glucose",
+        "I can explain that the main payoff here is the loaded carriers (NADH, FADH2), and that exhaled CO2 comes from these steps"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q5, Q6; SA 15; Part 4 Diagram",
+        "points": 24
+      },
+      "reading": [
+        {
+          "sections": "8.4",
+          "printedPages": "136 to 139",
+          "pdfPages": "155 to 158",
+          "chapter": 8,
+          "sectionTitle": "Inside the Mitochondria"
+        }
+      ]
+    },
+    {
+      "code": "B4.4",
+      "title": "Oxidative phosphorylation (electron transport and chemiosmosis)",
+      "titleAsPrinted": "Oxidative Phosphorylation (Electron Transport and Chemiosmosis)",
+      "central": false,
+      "description": "Students explain how the electron transport chain and chemiosmosis make most of the ATP.",
+      "iCan": [
+        "I can explain that NADH and FADH2 drop electrons into the chain, which fall to oxygen, the final electron acceptor, forming water",
+        "I can explain how the energy released pumps H+ into the intermembrane space, building a gradient",
+        "I can explain chemiosmosis: H+ flows back through ATP synthase, which makes ATP",
+        "I can state that this stage makes most of the ATP (about 28), and that without oxygen the whole chain stops"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q7, Q8; SA 16",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "8.4",
+          "printedPages": "139 to 141",
+          "pdfPages": "158 to 160",
+          "chapter": 8,
+          "sectionTitle": "Inside the Mitochondria"
+        }
+      ]
+    },
+    {
+      "code": "B4.5",
+      "title": "Fermentation and anaerobic respiration",
+      "titleAsPrinted": "Fermentation and Anaerobic Respiration",
+      "central": false,
+      "description": "Students explain how cells make ATP without oxygen.",
+      "iCan": [
+        "I can explain that without oxygen the electron transport chain stops, so NADH cannot be unloaded",
+        "I can explain that fermentation regenerates NAD+ so glycolysis can keep making 2 ATP",
+        "I can tell lactic acid fermentation (muscle, makes lactate) from alcohol fermentation (yeast, makes ethanol and CO2)",
+        "I can compare yields: about 32 ATP per glucose with oxygen versus only 2 by fermentation"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q9, Q10; SA 17; Part 3 CER",
+        "points": 29
+      },
+      "reading": [
+        {
+          "sections": "8.3",
+          "printedPages": "134 to 136",
+          "pdfPages": "153 to 155",
+          "chapter": 8,
+          "sectionTitle": "Outside the Mitochondria: Fermentation"
+        }
+      ]
+    }
+  ]
+}

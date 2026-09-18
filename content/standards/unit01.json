@@ -1,0 +1,181 @@
+{
+  "number": 1,
+  "slug": "water",
+  "nn": "01",
+  "title": "Water and the chemistry of life",
+  "titleAsPrinted": "Water and the Chemistry of Life",
+  "folder": "unit-01-water",
+  "accent": "#4FA3E0",
+  "accentName": "water blue",
+  "centralIdea": "B1.2",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B1.1 to B1.5, two items each"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B1.1 (1), B1.2 (1), B1.3 (2), B1.4 (2), B1.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B1.2 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B1.2, the structure of water"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B1.4 reading (Miller-Urey)"
+    }
+  ],
+  "source": {
+    "student": "../unit-01-water/01_Overview_and_Planning/U1_Standards_Student_Copy.docx",
+    "teacher": "../unit-01-water/01_Overview_and_Planning/U1_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B1.1",
+      "title": "Atoms, bonding, and polarity",
+      "titleAsPrinted": "Atoms, Bonding, and Polarity",
+      "central": false,
+      "description": "How atoms are built, how electron configuration determines how an atom bonds, and how electronegativity differences make some molecules, like water, polar.",
+      "iCan": [
+        "I can describe the structure of H, C, N, and O (protons, neutrons, electrons in shells) and draw accurate Bohr models.",
+        "I can explain how the number of valence electrons determines how many bonds an atom can form, and I can distinguish isotopes from ions.",
+        "I can correctly tell apart nonpolar covalent, polar covalent, ionic, and hydrogen bonds.",
+        "I can use electronegativity to explain why water is polar and how hydrogen bonds form between water molecules."
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q2, Q3; SA 11",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "2.1 to 2.2",
+          "printedPages": "20 to 26",
+          "pdfPages": "39 to 45",
+          "chapter": 2,
+          "sectionTitle": "Chemical Elements"
+        }
+      ]
+    },
+    {
+      "code": "B1.2",
+      "title": "Water's emergent properties",
+      "titleAsPrinted": "Water's Emergent Properties",
+      "central": true,
+      "description": "All six emergent properties of water at the molecular level, each connected to something that matters in biology or ecology.",
+      "iCan": [
+        "I can explain all six properties (cohesion, adhesion, specific heat, evaporative cooling, solvent behavior, ice density) using hydrogen-bond reasoning at the molecular level.",
+        "I can connect each property to a biological or ecological function.",
+        "My lab records are complete, legible, and clearly separate observation from inference."
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q4; SA 12; Part 3 CER; Part 4 Diagram",
+        "points": 44
+      },
+      "reading": [
+        {
+          "sections": "2.3",
+          "printedPages": "26 to 30",
+          "pdfPages": "45 to 49",
+          "chapter": 2,
+          "sectionTitle": "Chemistry of Water"
+        }
+      ]
+    },
+    {
+      "code": "B1.3",
+      "title": "pH, acids, bases, and buffers",
+      "titleAsPrinted": "pH, Acids, Bases, and Buffers",
+      "central": false,
+      "description": "The pH scale as a logarithmic measure of hydrogen ion concentration, the difference between acids and bases, and how buffers maintain stable pH.",
+      "iCan": [
+        "I can explain the pH scale as a log scale based on hydrogen ion concentration [H+].",
+        "I can distinguish strong from weak acids by how completely they dissociate.",
+        "I can describe how the bicarbonate / carbonic acid buffer resists pH change and explain why blood pH must stay within a narrow range."
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q5, Q6; SA 13, 14",
+        "points": 14
+      },
+      "reading": [
+        {
+          "sections": "2.4",
+          "printedPages": "30 to 34",
+          "pdfPages": "49 to 53",
+          "chapter": 2,
+          "sectionTitle": "Acids and Bases"
+        }
+      ]
+    },
+    {
+      "code": "B1.4",
+      "title": "Carbon chemistry, functional groups, and polymers",
+      "titleAsPrinted": "Carbon Chemistry, Functional Groups, and Polymers",
+      "central": false,
+      "description": "Why carbon's four bonds make structural diversity possible, the major functional groups, what the Miller-Urey experiment did and did not show, and how cells build and break polymers from monomers.",
+      "iCan": [
+        "I can explain why carbon's four bonds allow structural diversity.",
+        "I can identify the hydroxyl, carboxyl, amino, and phosphate groups and describe their key properties.",
+        "I can explain what the Miller-Urey experiment demonstrated and what it did not prove.",
+        "I can define monomer and polymer, name the four macromolecule classes, and explain dehydration synthesis and hydrolysis."
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q7, Q8; SA 15, 16 (Part 5 passage also draws on this standard)",
+        "points": 14
+      },
+      "reading": [
+        {
+          "sections": "3.1",
+          "printedPages": "36 to 39",
+          "pdfPages": "55 to 58",
+          "chapter": 3,
+          "sectionTitle": "Organic Molecules"
+        },
+        {
+          "sections": "18.1",
+          "printedPages": "318 to 323",
+          "pdfPages": "337 to 342",
+          "chapter": 18,
+          "sectionTitle": "Origin of Life"
+        }
+      ]
+    },
+    {
+      "code": "B1.5",
+      "title": "Macromolecule structure determines function",
+      "titleAsPrinted": "Macromolecule Structure Determines Function",
+      "central": false,
+      "description": "For each of the four macromolecule classes (carbohydrates, lipids, proteins, nucleic acids), how its structure gives rise to its function.",
+      "iCan": [],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q9, Q10; SA 17",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "3.2 to 3.5",
+          "printedPages": "39 to 56",
+          "pdfPages": "58 to 75",
+          "chapter": 3,
+          "sectionTitle": "Carbohydrates"
+        }
+      ]
+    }
+  ]
+}

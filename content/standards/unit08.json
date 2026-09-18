@@ -1,0 +1,188 @@
+{
+  "number": 8,
+  "slug": "evolution",
+  "nn": "08",
+  "title": "Evolution",
+  "titleAsPrinted": "Evolution",
+  "folder": "unit-08-evolution",
+  "accent": "#3BAFA0",
+  "accentName": "deep-time teal",
+  "centralIdea": "B8.2",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B8.1 to B8.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B8.1 (2), B8.2 (2), B8.3 (1), B8.4 (1), B8.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B8.2 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B8.1: the phylogenetic tree built from shared characters"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B8.2 (the natural-selection passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-08-evolution/01_Overview_and_Planning/U8_Standards_Student_Copy.docx",
+    "teacher": "../unit-08-evolution/01_Overview_and_Planning/U8_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B8.1",
+      "title": "Descent with modification",
+      "titleAsPrinted": "Descent with Modification",
+      "central": false,
+      "description": "Students explain Darwin's core idea and the evidence for common ancestry.",
+      "iCan": [
+        "I can state Darwin's idea of descent with modification: living species descended, with changes, from common ancestors",
+        "I can read a phylogenetic tree as a hypothesis of shared ancestry, where each branch point is a common ancestor",
+        "I can describe the evidence for common ancestry: the fossil record, homologous structures, vestigial structures, molecular and DNA similarity, and biogeography",
+        "I can tell the difference between homology (shared ancestry) and analogy (similar function, independent origin)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2, Q3; SA 11, 12; Part 4 Diagram",
+        "points": 31
+      },
+      "reading": [
+        {
+          "sections": "15.1 to 15.2",
+          "printedPages": "262 to 270",
+          "pdfPages": "281 to 289",
+          "chapter": 15,
+          "sectionTitle": "History of Evolutionary Thought"
+        }
+      ]
+    },
+    {
+      "code": "B8.2",
+      "title": "Natural selection",
+      "titleAsPrinted": "Natural Selection",
+      "central": true,
+      "description": "Students explain how natural selection produces adaptation.",
+      "iCan": [
+        "I can state the conditions for natural selection: heritable variation, more offspring than can survive, and some variants survive and reproduce better",
+        "I can explain that individuals with favorable heritable traits leave more offspring, so those traits become more common over generations",
+        "I can define adaptation and fitness, and explain that the population evolves, not the individual",
+        "I can correct common misconceptions: individuals do not evolve in a lifetime, and traits are not acquired by need or use"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q4, Q5, Q6; SA 13, 14; Part 3 CER",
+        "points": 36
+      },
+      "reading": [
+        {
+          "sections": "15.3",
+          "printedPages": "270 to 278",
+          "pdfPages": "289 to 297",
+          "chapter": 15,
+          "sectionTitle": "Evidence for Evolution"
+        },
+        {
+          "sections": "16.2",
+          "printedPages": "286 to 290",
+          "pdfPages": "305 to 309",
+          "chapter": 16,
+          "sectionTitle": "Natural Selection"
+        }
+      ]
+    },
+    {
+      "code": "B8.3",
+      "title": "Hardy-Weinberg and genetic variation",
+      "titleAsPrinted": "Hardy-Weinberg and Genetic Variation",
+      "central": false,
+      "description": "Students use allele frequencies to define and detect evolution.",
+      "iCan": [
+        "I can define a gene pool and allele frequency, and define evolution as a change in allele frequencies over generations",
+        "I can state the Hardy-Weinberg equations (p + q = 1 and p^2 + 2pq + q^2 = 1) and say what each term means",
+        "I can list the five conditions for equilibrium and explain that equilibrium means no evolution",
+        "I can use the equations to calculate allele and genotype frequencies from data"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q7, Q8; SA 15",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "16.1",
+          "printedPages": "280 to 286",
+          "pdfPages": "299 to 305",
+          "chapter": 16,
+          "sectionTitle": "Genes, Populations, and Evolution"
+        }
+      ]
+    },
+    {
+      "code": "B8.4",
+      "title": "Mechanisms of evolution",
+      "titleAsPrinted": "Mechanisms of Evolution",
+      "central": false,
+      "description": "Students compare the processes that change allele frequencies.",
+      "iCan": [
+        "I can explain that natural selection is the only mechanism that consistently produces adaptation",
+        "I can explain genetic drift (random change, strong in small populations) and the bottleneck and founder effects",
+        "I can explain gene flow (alleles moving between populations) and that it tends to reduce differences",
+        "I can name mutation as the source of new alleles, and tell apart directional, stabilizing, and disruptive selection"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q9; SA 16",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "16.3",
+          "printedPages": "290 to 295",
+          "pdfPages": "309 to 314",
+          "chapter": 16,
+          "sectionTitle": "Maintenance of Diversity"
+        }
+      ]
+    },
+    {
+      "code": "B8.5",
+      "title": "Speciation",
+      "titleAsPrinted": "Speciation",
+      "central": false,
+      "description": "Students explain how one species becomes two.",
+      "iCan": [
+        "I can state the biological species concept (members can interbreed and produce fertile offspring; different species cannot)",
+        "I can tell prezygotic barriers (prevent mating or fertilization) from postzygotic barriers (hybrids inviable or sterile)",
+        "I can tell allopatric speciation (a geographic barrier separates populations) from sympatric speciation (isolation without geographic separation)",
+        "I can explain that speciation happens when gene flow stops and populations diverge until they can no longer interbreed"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q10; SA 17",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "17.1 to 17.2",
+          "printedPages": "297 to 308",
+          "pdfPages": "316 to 327",
+          "chapter": 17,
+          "sectionTitle": "How New Species Evolve"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { url } from '../../lib/url';
+---
+<Layout title="Lab" description="Reusable 3D structures and simulations used across the Advanced Biology units.">
+  <section class="page-head">
+    <p class="eyebrow">Lab</p>
+    <h1>Structures and simulations</h1>
+    <p class="lede">Models built once and used wherever a unit needs them. Everything here runs on the device, offline, with a finger or a mouse.</p>
+  </section>
+  <ul class="card-grid">
+    <li>
+      <a class="card" href={url('/lab/carbon-allotropes/')}>
+        <span class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 96 96" fill="none" stroke="#9b6be0" stroke-width="3" stroke-linejoin="round">
+            <polygon points="48,14 76,30 76,62 48,78 20,62 20,30"/><polygon points="48,30 62,38 62,54 48,62 34,54 34,38"/>
+            <path d="M48 14v16M76 30 62 38M76 62 62 54M48 78V62M20 62l14-8M20 30l14 8"/>
+          </svg>
+        </span>
+        <h2>Carbon allotropes</h2>
+        <p>Diamond, graphite, graphene, C60, a (10,0) nanotube, and amorphous carbon from real coordinates, with a six step walkthrough.</p>
+      </a>
+    </li>
+  </ul>
+</Layout>

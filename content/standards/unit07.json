@@ -1,0 +1,205 @@
+{
+  "number": 7,
+  "slug": "cell-division-and-genetics",
+  "nn": "07",
+  "title": "Cell division and genetics",
+  "titleAsPrinted": "Cell Division and Genetics",
+  "folder": "unit-07-cell-division-and-genetics",
+  "accent": "#D05BA6",
+  "accentName": "chromosome stain",
+  "centralIdea": "B7.2",
+  "readingMapDerived": false,
+  "readingMapNote": "Verified 2026-09-17 against U7_Homework_Reading_Schedule_Student.docx (2026-09-03) and U7_Session_Plans.docx (2026-09-04): 10.6 is read once before Session 4 (B7.4) and drawn on again in Session 5 (B7.5).",
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B7.1 to B7.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B7.1 (2), B7.2 (2), B7.3 (1), B7.4 (1), B7.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B7.2 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B7.1: the four phases of mitosis, or the meiosis overview"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B7.5 (the pedigree passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-07-cell-division-and-genetics/01_Overview_and_Planning/U7_Standards_Student_Copy.docx",
+    "teacher": "../unit-07-cell-division-and-genetics/01_Overview_and_Planning/U7_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B7.1",
+      "title": "Cell cycle, mitosis, and cancer",
+      "titleAsPrinted": "Cell Cycle, Mitosis, and Cancer",
+      "central": false,
+      "description": "Students describe the cell cycle and its checkpoints, explain how mitosis produces two genetically identical diploid cells, and explain cancer as a loss of cell-cycle control.",
+      "iCan": [
+        "I can 4",
+        "I can 3",
+        "I can 2",
+        "I can 1"
+      ],
+      "history": [
+        "Merges the former B7.1 Cell Cycle and Its Control, former B7.2 Mitosis, and former B7.3 Cancer. Cancer becomes exam content and a standing Wonder Period topic rather than its own standard."
+      ],
+      "exam": {
+        "examItems": "MC Q1, Q2; SA 11, 12; Part 4 Diagram",
+        "points": 29
+      },
+      "reading": [
+        {
+          "sections": "9.1 to 9.4",
+          "printedPages": "148 to 161",
+          "pdfPages": "167 to 180",
+          "chapter": 9,
+          "sectionTitle": "The Cell Cycle"
+        }
+      ]
+    },
+    {
+      "code": "B7.2",
+      "title": "Meiosis and genetic variation",
+      "titleAsPrinted": "Meiosis and Genetic Variation",
+      "central": true,
+      "description": "Students explain how meiosis produces haploid gametes and creates genetic variation.",
+      "iCan": [
+        "I can 4",
+        "I can 3",
+        "I can 2",
+        "I can 1"
+      ],
+      "history": [
+        "Unchanged from the former B7.4 Meiosis. Absorbs the former B7.5 Genetic Variation from Meiosis."
+      ],
+      "exam": {
+        "examItems": "MC Q3, Q4; SA 13, 14; Part 3 CER",
+        "points": 34
+      },
+      "reading": [
+        {
+          "sections": "10.1 to 10.4",
+          "printedPages": "167 to 176",
+          "pdfPages": "186 to 195",
+          "chapter": 10,
+          "sectionTitle": "Overview of Meiosis"
+        }
+      ]
+    },
+    {
+      "code": "B7.3",
+      "title": "Mendelian genetics: segregation and independent assortment",
+      "titleAsPrinted": "Mendelian Genetics: Segregation and Independent Assortment",
+      "central": false,
+      "description": "Students predict offspring from single-gene and two-gene crosses.",
+      "iCan": [
+        "I can 4",
+        "I can 3",
+        "I can 2",
+        "I can 1"
+      ],
+      "history": [
+        "Merges the former B9.1 Mendel's Laws and former B9.2 Dihybrid Crosses and Probability. This standard is no longer the unit's keystone; that status now belongs to B7.2 Meiosis, the mechanism that explains it."
+      ],
+      "exam": {
+        "examItems": "MC Q5, Q6; SA 15",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "11.1 to 11.2",
+          "printedPages": "187 to 194",
+          "pdfPages": "206 to 213",
+          "chapter": 11,
+          "sectionTitle": "Gregor Mendel"
+        }
+      ]
+    },
+    {
+      "code": "B7.4",
+      "title": "Beyond Mendel: incomplete dominance, codominance, multiple alleles, and sex linkage",
+      "titleAsPrinted": "Beyond Mendel: Incomplete Dominance, Codominance, Multiple Alleles, and Sex Linkage",
+      "central": false,
+      "description": "Students explain inheritance patterns that are not simple dominant and recessive, and connect inheritance to the behavior of chromosomes carrying more than one gene.",
+      "iCan": [
+        "I can 4",
+        "I can 3",
+        "I can 2",
+        "I can 1"
+      ],
+      "history": [
+        "From the former B9.3 Beyond Mendel. Absorbs the chromosome-theory, sex-linkage, and gene-linkage content from the former B9.5 The Chromosomal Basis: Sex Linkage and Linked Genes. The nondisjunction and karyotype content from that same former standard goes to B7.5 instead; see that standard for the split."
+      ],
+      "exam": {
+        "examItems": "MC Q7, Q8; SA 16",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "11.4",
+          "printedPages": "198 to 206",
+          "pdfPages": "217 to 225",
+          "chapter": 11,
+          "sectionTitle": "Beyond Mendelian Inheritance"
+        },
+        {
+          "sections": "10.6",
+          "printedPages": "177 to 185",
+          "pdfPages": "196 to 204",
+          "chapter": 10,
+          "sectionTitle": "Changes in Chromosome Number and Structure"
+        }
+      ]
+    },
+    {
+      "code": "B7.5",
+      "title": "Chromosomal disorders and pedigrees",
+      "titleAsPrinted": "Chromosomal Disorders and Pedigrees",
+      "central": false,
+      "description": "Students analyze human inheritance using pedigrees and explain how errors in meiosis produce chromosomal disorders.",
+      "iCan": [
+        "I can 4",
+        "I can 3",
+        "I can 2",
+        "I can 1"
+      ],
+      "history": [
+        "Unchanged from the former B9.4 Human Inheritance and Pedigrees. Absorbs the nondisjunction and karyotype content from the former B9.5 The Chromosomal Basis: Sex Linkage and Linked Genes; the linkage and sex-linkage content from that same former standard goes to B7.4 instead, not here."
+      ],
+      "exam": {
+        "examItems": "MC Q9, Q10; SA 17",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "11.3",
+          "printedPages": "194 to 198",
+          "pdfPages": "213 to 217",
+          "chapter": 11,
+          "sectionTitle": "Mendelian Patterns of Inheritance and Human Disease"
+        },
+        {
+          "sections": "10.6",
+          "printedPages": "177 to 185",
+          "pdfPages": "196 to 204",
+          "chapter": 10,
+          "sectionTitle": "Changes in Chromosome Number and Structure"
+        }
+      ]
+    }
+  ]
+}

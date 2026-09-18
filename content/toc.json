@@ -1,0 +1,2377 @@
+{
+  "book": {
+    "title": "Biology",
+    "edition": "12th edition",
+    "authors": [
+      "Sylvia S. Mader",
+      "Michael Windelspecht"
+    ],
+    "publisher": "McGraw-Hill",
+    "year": 2016,
+    "file": "../reference/Mader_Windelspecht_Biology.pdf",
+    "pdfPages": 1025,
+    "pdfPageOffset": 19,
+    "note": "PDF page = printed page + 19. Structure read from the PDF bookmark outline on 2026-09-17."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "A View of Life",
+      "pdfPage": 20,
+      "printedPage": 1,
+      "sections": [
+        {
+          "number": "1.1",
+          "title": "The Characteristics of Life",
+          "pdfPage": 21,
+          "printedPage": 2
+        },
+        {
+          "number": "1.2",
+          "title": "Evolution and the Classification of Life",
+          "pdfPage": 25,
+          "printedPage": 6
+        },
+        {
+          "number": "1.3",
+          "title": "The Process of Science",
+          "pdfPage": 28,
+          "printedPage": 9
+        },
+        {
+          "number": "1.4",
+          "title": "Challenges Facing Science",
+          "pdfPage": 32,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Basic Chemistry",
+      "pdfPage": 38,
+      "printedPage": 19,
+      "sections": [
+        {
+          "number": "2.1",
+          "title": "Chemical Elements",
+          "pdfPage": 39,
+          "printedPage": 20
+        },
+        {
+          "number": "2.2",
+          "title": "Molecules and Compounds",
+          "pdfPage": 43,
+          "printedPage": 24
+        },
+        {
+          "number": "2.3",
+          "title": "Chemistry of Water",
+          "pdfPage": 45,
+          "printedPage": 26
+        },
+        {
+          "number": "2.4",
+          "title": "Acids and Bases",
+          "pdfPage": 49,
+          "printedPage": 30
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The Chemistry of Organic Molecules",
+      "pdfPage": 54,
+      "printedPage": 35,
+      "sections": [
+        {
+          "number": "3.1",
+          "title": "Organic Molecules",
+          "pdfPage": 55,
+          "printedPage": 36
+        },
+        {
+          "number": "3.2",
+          "title": "Carbohydrates",
+          "pdfPage": 58,
+          "printedPage": 39
+        },
+        {
+          "number": "3.3",
+          "title": "Lipids",
+          "pdfPage": 61,
+          "printedPage": 42
+        },
+        {
+          "number": "3.4",
+          "title": "Proteins",
+          "pdfPage": 65,
+          "printedPage": 46
+        },
+        {
+          "number": "3.5",
+          "title": "Nucleic Acids",
+          "pdfPage": 69,
+          "printedPage": 50
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Cell Structure and Function",
+      "pdfPage": 76,
+      "printedPage": 57,
+      "sections": [
+        {
+          "number": "4.1",
+          "title": "Cellular Level of Organization",
+          "pdfPage": 77,
+          "printedPage": 58
+        },
+        {
+          "number": "4.2",
+          "title": "Prokaryotic Cells",
+          "pdfPage": 81,
+          "printedPage": 62
+        },
+        {
+          "number": "4.3",
+          "title": "Introduction to Eukaryotic Cells",
+          "pdfPage": 83,
+          "printedPage": 64
+        },
+        {
+          "number": "4.4",
+          "title": "The Nucleus and Ribosomes",
+          "pdfPage": 86,
+          "printedPage": 67
+        },
+        {
+          "number": "4.5",
+          "title": "The Endomembrane System",
+          "pdfPage": 88,
+          "printedPage": 69
+        },
+        {
+          "number": "4.6",
+          "title": "Microbodies and Vacuoles",
+          "pdfPage": 91,
+          "printedPage": 72
+        },
+        {
+          "number": "4.7",
+          "title": "The Energy-Related Organelles",
+          "pdfPage": 92,
+          "printedPage": 73
+        },
+        {
+          "number": "4.8",
+          "title": "The Cytoskeleton",
+          "pdfPage": 94,
+          "printedPage": 75
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Membrane Structure and Function",
+      "pdfPage": 101,
+      "printedPage": 82,
+      "sections": [
+        {
+          "number": "5.1",
+          "title": "Plasma Membrane Structure and Function",
+          "pdfPage": 102,
+          "printedPage": 83
+        },
+        {
+          "number": "5.2",
+          "title": "Passive Transport Across a Membrane",
+          "pdfPage": 107,
+          "printedPage": 88
+        },
+        {
+          "number": "5.3",
+          "title": "Active Transport Across a Membrane",
+          "pdfPage": 110,
+          "printedPage": 91
+        },
+        {
+          "number": "5.4",
+          "title": "Modification of Cell Surfaces",
+          "pdfPage": 114,
+          "printedPage": 95
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Metabolism: Energy and Enzymes",
+      "pdfPage": 119,
+      "printedPage": 100,
+      "sections": [
+        {
+          "number": "6.1",
+          "title": "Cells and the Flow of Energy",
+          "pdfPage": 120,
+          "printedPage": 101
+        },
+        {
+          "number": "6.2",
+          "title": "Metabolic Reactions and Energy Transformations",
+          "pdfPage": 122,
+          "printedPage": 103
+        },
+        {
+          "number": "6.3",
+          "title": "Metabolic Pathways and Enzymes",
+          "pdfPage": 124,
+          "printedPage": 105
+        },
+        {
+          "number": "6.4",
+          "title": "Oxidation-Reduction Reactions and Metabolism",
+          "pdfPage": 128,
+          "printedPage": 109
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Photosynthesis",
+      "pdfPage": 133,
+      "printedPage": 114,
+      "sections": [
+        {
+          "number": "7.1",
+          "title": "Photosynthetic Organisms",
+          "pdfPage": 134,
+          "printedPage": 115
+        },
+        {
+          "number": "7.2",
+          "title": "The Process of Photosynthesis",
+          "pdfPage": 136,
+          "printedPage": 117
+        },
+        {
+          "number": "7.3",
+          "title": "Plants Convert Solar Energy",
+          "pdfPage": 138,
+          "printedPage": 119
+        },
+        {
+          "number": "7.4",
+          "title": "Plants Fix Carbon Dioxide",
+          "pdfPage": 142,
+          "printedPage": 123
+        },
+        {
+          "number": "7.5",
+          "title": "Other Types of Photosynthesis",
+          "pdfPage": 144,
+          "printedPage": 125
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Cellular Respiration",
+      "pdfPage": 148,
+      "printedPage": 129,
+      "sections": [
+        {
+          "number": "8.1",
+          "title": "Overview of Cellular Respiration",
+          "pdfPage": 149,
+          "printedPage": 130
+        },
+        {
+          "number": "8.2",
+          "title": "Outside the Mitochondria: Glycolysis",
+          "pdfPage": 151,
+          "printedPage": 132
+        },
+        {
+          "number": "8.3",
+          "title": "Outside the Mitochondria: Fermentation",
+          "pdfPage": 153,
+          "printedPage": 134
+        },
+        {
+          "number": "8.4",
+          "title": "Inside the Mitochondria",
+          "pdfPage": 155,
+          "printedPage": 136
+        },
+        {
+          "number": "8.5",
+          "title": "Metabolism",
+          "pdfPage": 160,
+          "printedPage": 141
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "The Cell Cycle and Cellular Reproduction",
+      "pdfPage": 166,
+      "printedPage": 147,
+      "sections": [
+        {
+          "number": "9.1",
+          "title": "The Cell Cycle",
+          "pdfPage": 167,
+          "printedPage": 148
+        },
+        {
+          "number": "9.2",
+          "title": "The Eukaryotic Chromosome",
+          "pdfPage": 170,
+          "printedPage": 151
+        },
+        {
+          "number": "9.3",
+          "title": "Mitosis and Cytokinesis",
+          "pdfPage": 171,
+          "printedPage": 152
+        },
+        {
+          "number": "9.4",
+          "title": "The Cell Cycle and Cancer",
+          "pdfPage": 177,
+          "printedPage": 158
+        },
+        {
+          "number": "9.5",
+          "title": "Prokaryotic Cell Division",
+          "pdfPage": 180,
+          "printedPage": 161
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Meiosis and Sexual Reproduction",
+      "pdfPage": 185,
+      "printedPage": 166,
+      "sections": [
+        {
+          "number": "10.1",
+          "title": "Overview of Meiosis",
+          "pdfPage": 186,
+          "printedPage": 167
+        },
+        {
+          "number": "10.2",
+          "title": "Genetic Variation",
+          "pdfPage": 188,
+          "printedPage": 169
+        },
+        {
+          "number": "10.3",
+          "title": "The Phases of Meiosis",
+          "pdfPage": 191,
+          "printedPage": 172
+        },
+        {
+          "number": "10.4",
+          "title": "Meiosis Compared to Mitosis",
+          "pdfPage": 193,
+          "printedPage": 174
+        },
+        {
+          "number": "10.5",
+          "title": "The Cycle of Life",
+          "pdfPage": 195,
+          "printedPage": 176
+        },
+        {
+          "number": "10.6",
+          "title": "Changes in Chromosome Number and Structure",
+          "pdfPage": 196,
+          "printedPage": 177
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Mendelian Patterns of Inheritance",
+      "pdfPage": 205,
+      "printedPage": 186,
+      "sections": [
+        {
+          "number": "11.1",
+          "title": "Gregor Mendel",
+          "pdfPage": 206,
+          "printedPage": 187
+        },
+        {
+          "number": "11.2",
+          "title": "Mendel's Laws",
+          "pdfPage": 207,
+          "printedPage": 188
+        },
+        {
+          "number": "11.3",
+          "title": "Mendelian Patterns of Inheritance and Human Disease",
+          "pdfPage": 213,
+          "printedPage": 194
+        },
+        {
+          "number": "11.4",
+          "title": "Beyond Mendelian Inheritance",
+          "pdfPage": 217,
+          "printedPage": 198
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Molecular Biology of the Gene",
+      "pdfPage": 226,
+      "printedPage": 207,
+      "sections": [
+        {
+          "number": "12.1",
+          "title": "The Genetic Material",
+          "pdfPage": 227,
+          "printedPage": 208
+        },
+        {
+          "number": "12.2",
+          "title": "Replication of DNA",
+          "pdfPage": 232,
+          "printedPage": 213
+        },
+        {
+          "number": "12.3",
+          "title": "The Genetic Code of Life",
+          "pdfPage": 234,
+          "printedPage": 215
+        },
+        {
+          "number": "12.4",
+          "title": "First Step: Transcription",
+          "pdfPage": 236,
+          "printedPage": 217
+        },
+        {
+          "number": "12.5",
+          "title": "Second Step: Translation",
+          "pdfPage": 239,
+          "printedPage": 220
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Regulation of Gene Expression",
+      "pdfPage": 247,
+      "printedPage": 228,
+      "sections": [
+        {
+          "number": "13.1",
+          "title": "Prokaryotic Regulation",
+          "pdfPage": 248,
+          "printedPage": 229
+        },
+        {
+          "number": "13.2",
+          "title": "Eukaryotic Regulation",
+          "pdfPage": 251,
+          "printedPage": 232
+        },
+        {
+          "number": "13.3",
+          "title": "Gene Mutations",
+          "pdfPage": 257,
+          "printedPage": 238
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Biotechnology and Genomics",
+      "pdfPage": 263,
+      "printedPage": 244,
+      "sections": [
+        {
+          "number": "14.1",
+          "title": "DNA Cloning",
+          "pdfPage": 264,
+          "printedPage": 245
+        },
+        {
+          "number": "14.2",
+          "title": "Biotechnology Products",
+          "pdfPage": 266,
+          "printedPage": 247
+        },
+        {
+          "number": "14.3",
+          "title": "Gene Therapy",
+          "pdfPage": 269,
+          "printedPage": 250
+        },
+        {
+          "number": "14.4",
+          "title": "Genomics",
+          "pdfPage": 270,
+          "printedPage": 251
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Darwin and Evolution",
+      "pdfPage": 280,
+      "printedPage": 261,
+      "sections": [
+        {
+          "number": "15.1",
+          "title": "History of Evolutionary Thought",
+          "pdfPage": 281,
+          "printedPage": 262
+        },
+        {
+          "number": "15.2",
+          "title": "Darwin's Theory of Evolution",
+          "pdfPage": 284,
+          "printedPage": 265
+        },
+        {
+          "number": "15.3",
+          "title": "Evidence for Evolution",
+          "pdfPage": 289,
+          "printedPage": 270
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "How Populations Evolve",
+      "pdfPage": 298,
+      "printedPage": 279,
+      "sections": [
+        {
+          "number": "16.1",
+          "title": "Genes, Populations, and Evolution",
+          "pdfPage": 299,
+          "printedPage": 280
+        },
+        {
+          "number": "16.2",
+          "title": "Natural Selection",
+          "pdfPage": 305,
+          "printedPage": 286
+        },
+        {
+          "number": "16.3",
+          "title": "Maintenance of Diversity",
+          "pdfPage": 309,
+          "printedPage": 290
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Speciation and Macroevolution",
+      "pdfPage": 315,
+      "printedPage": 296,
+      "sections": [
+        {
+          "number": "17.1",
+          "title": "How New Species Evolve",
+          "pdfPage": 316,
+          "printedPage": 297
+        },
+        {
+          "number": "17.2",
+          "title": "Modes of Speciation",
+          "pdfPage": 322,
+          "printedPage": 303
+        },
+        {
+          "number": "17.3",
+          "title": "Principles of Macroevolution",
+          "pdfPage": 327,
+          "printedPage": 308
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Origin and History of Life",
+      "pdfPage": 336,
+      "printedPage": 317,
+      "sections": [
+        {
+          "number": "18.1",
+          "title": "Origin of Life",
+          "pdfPage": 337,
+          "printedPage": 318
+        },
+        {
+          "number": "18.2",
+          "title": "History of Life",
+          "pdfPage": 342,
+          "printedPage": 323
+        },
+        {
+          "number": "18.3",
+          "title": "Geological Factors That Influence Evolution",
+          "pdfPage": 351,
+          "printedPage": 332
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Taxonomy, Systematics, and Phylogeny",
+      "pdfPage": 356,
+      "printedPage": 337,
+      "sections": [
+        {
+          "number": "19.1",
+          "title": "Systematic Biology",
+          "pdfPage": 357,
+          "printedPage": 338
+        },
+        {
+          "number": "19.2",
+          "title": "The Three-Domain System",
+          "pdfPage": 360,
+          "printedPage": 341
+        },
+        {
+          "number": "19.3",
+          "title": "Phylogeny",
+          "pdfPage": 363,
+          "printedPage": 344
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Viruses, Bacteria, and Archaea",
+      "pdfPage": 372,
+      "printedPage": 353,
+      "sections": [
+        {
+          "number": "20.1",
+          "title": "Viruses, Viroids, and Prions",
+          "pdfPage": 373,
+          "printedPage": 354
+        },
+        {
+          "number": "20.2",
+          "title": "The Prokaryotes",
+          "pdfPage": 379,
+          "printedPage": 360
+        },
+        {
+          "number": "20.3",
+          "title": "The Bacteria",
+          "pdfPage": 382,
+          "printedPage": 363
+        },
+        {
+          "number": "20.4",
+          "title": "The Archaea",
+          "pdfPage": 387,
+          "printedPage": 368
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Protist Evolution and Diversity",
+      "pdfPage": 392,
+      "printedPage": 373,
+      "sections": [
+        {
+          "number": "21.1",
+          "title": "General Biology of Protists",
+          "pdfPage": 393,
+          "printedPage": 374
+        },
+        {
+          "number": "21.2",
+          "title": "Supergroup Archaeplastida",
+          "pdfPage": 396,
+          "printedPage": 377
+        },
+        {
+          "number": "21.3",
+          "title": "Supergroup Chromalveolata",
+          "pdfPage": 399,
+          "printedPage": 380
+        },
+        {
+          "number": "21.4",
+          "title": "Supergroup Excavata",
+          "pdfPage": 404,
+          "printedPage": 385
+        },
+        {
+          "number": "21.5",
+          "title": "Supergroups Amoebozoa, Opisthokonta, and Rhizaria",
+          "pdfPage": 408,
+          "printedPage": 389
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Fungi Evolution and Diversity",
+      "pdfPage": 414,
+      "printedPage": 395,
+      "sections": [
+        {
+          "number": "22.1",
+          "title": "Evolution and Characteristics of Fungi",
+          "pdfPage": 415,
+          "printedPage": 396
+        },
+        {
+          "number": "22.2",
+          "title": "Diversity of Fungi",
+          "pdfPage": 417,
+          "printedPage": 398
+        },
+        {
+          "number": "22.3",
+          "title": "Symbiotic Relationships of Fungi",
+          "pdfPage": 424,
+          "printedPage": 405
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Plant Evolution and Diversity",
+      "pdfPage": 430,
+      "printedPage": 411,
+      "sections": [
+        {
+          "number": "23.1",
+          "title": "Ancestry and Features of Land Plants",
+          "pdfPage": 431,
+          "printedPage": 412
+        },
+        {
+          "number": "23.2",
+          "title": "Evolution of Bryophytes: Colonization of Land",
+          "pdfPage": 434,
+          "printedPage": 415
+        },
+        {
+          "number": "23.3",
+          "title": "Evolution of Lycophytes: Vascular Tissue",
+          "pdfPage": 436,
+          "printedPage": 417
+        },
+        {
+          "number": "23.4",
+          "title": "Evolution of Pteridophytes: Megaphylls",
+          "pdfPage": 438,
+          "printedPage": 419
+        },
+        {
+          "number": "23.5",
+          "title": "Evolution of Seed Plants: Full Adaptation to Land",
+          "pdfPage": 442,
+          "printedPage": 423
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Flowering Plants: Structure and Organization",
+      "pdfPage": 454,
+      "printedPage": 435,
+      "sections": [
+        {
+          "number": "24.1",
+          "title": "Cells and Tissues of Flowering Plants",
+          "pdfPage": 455,
+          "printedPage": 436
+        },
+        {
+          "number": "24.2",
+          "title": "Organs of Flowering Plants",
+          "pdfPage": 459,
+          "printedPage": 440
+        },
+        {
+          "number": "24.3",
+          "title": "Organization and Diversity of Roots",
+          "pdfPage": 461,
+          "printedPage": 442
+        },
+        {
+          "number": "24.4",
+          "title": "Organization and Diversity of Stems",
+          "pdfPage": 464,
+          "printedPage": 445
+        },
+        {
+          "number": "24.5",
+          "title": "Organization and Diversity of Leaves",
+          "pdfPage": 469,
+          "printedPage": 450
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Flowering Plants: Nutrition and Transport",
+      "pdfPage": 475,
+      "printedPage": 456,
+      "sections": [
+        {
+          "number": "25.1",
+          "title": "Plant Nutrition and Soil",
+          "pdfPage": 476,
+          "printedPage": 457
+        },
+        {
+          "number": "25.2",
+          "title": "Water and Mineral Uptake",
+          "pdfPage": 480,
+          "printedPage": 461
+        },
+        {
+          "number": "25.3",
+          "title": "Transport Mechanisms in Plants",
+          "pdfPage": 484,
+          "printedPage": 465
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Flowering Plants: Control of Growth Responses",
+      "pdfPage": 495,
+      "printedPage": 476,
+      "sections": [
+        {
+          "number": "26.1",
+          "title": "Plant Hormones",
+          "pdfPage": 496,
+          "printedPage": 477
+        },
+        {
+          "number": "26.2",
+          "title": "Plant Growth and Movement Responses",
+          "pdfPage": 504,
+          "printedPage": 485
+        },
+        {
+          "number": "26.3",
+          "title": "Plant Responses to Phytochrome",
+          "pdfPage": 508,
+          "printedPage": 489
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "title": "Flowering Plants: Reproduction",
+      "pdfPage": 514,
+      "printedPage": 495,
+      "sections": [
+        {
+          "number": "27.1",
+          "title": "Sexual Reproductive Strategies",
+          "pdfPage": 515,
+          "printedPage": 496
+        },
+        {
+          "number": "27.2",
+          "title": "Seed Development",
+          "pdfPage": 521,
+          "printedPage": 502
+        },
+        {
+          "number": "27.3",
+          "title": "Fruit Types and Seed Dispersal",
+          "pdfPage": 523,
+          "printedPage": 504
+        },
+        {
+          "number": "27.4",
+          "title": "Asexual Reproductive Strategies",
+          "pdfPage": 526,
+          "printedPage": 507
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "title": "Invertebrate Evolution",
+      "pdfPage": 532,
+      "printedPage": 513,
+      "sections": [
+        {
+          "number": "28.1",
+          "title": "Evolution of Animals",
+          "pdfPage": 533,
+          "printedPage": 514
+        },
+        {
+          "number": "28.2",
+          "title": "The Simplest Invertebrates",
+          "pdfPage": 540,
+          "printedPage": 521
+        },
+        {
+          "number": "28.3",
+          "title": "Diversity Among the Lophotrochozoans",
+          "pdfPage": 543,
+          "printedPage": 524
+        },
+        {
+          "number": "28.4",
+          "title": "Diversity of the Ecdysozoans",
+          "pdfPage": 551,
+          "printedPage": 532
+        },
+        {
+          "number": "28.5",
+          "title": "Invertebrate Deuterostomes",
+          "pdfPage": 558,
+          "printedPage": 539
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "title": "Vertebrate Evolution",
+      "pdfPage": 563,
+      "printedPage": 544,
+      "sections": [
+        {
+          "number": "29.1",
+          "title": "The Chordates",
+          "pdfPage": 564,
+          "printedPage": 545
+        },
+        {
+          "number": "29.2",
+          "title": "The Vertebrates",
+          "pdfPage": 566,
+          "printedPage": 547
+        },
+        {
+          "number": "29.3",
+          "title": "The Fishes",
+          "pdfPage": 567,
+          "printedPage": 548
+        },
+        {
+          "number": "29.4",
+          "title": "The Amphibians",
+          "pdfPage": 570,
+          "printedPage": 551
+        },
+        {
+          "number": "29.5",
+          "title": "The Reptiles",
+          "pdfPage": 572,
+          "printedPage": 553
+        },
+        {
+          "number": "29.6",
+          "title": "The Mammals",
+          "pdfPage": 578,
+          "printedPage": 559
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "title": "Human Evolution",
+      "pdfPage": 583,
+      "printedPage": 564,
+      "sections": [
+        {
+          "number": "30.1",
+          "title": "Evolution of Primates",
+          "pdfPage": 584,
+          "printedPage": 565
+        },
+        {
+          "number": "30.2",
+          "title": "Evolution of Humanlike Hominins",
+          "pdfPage": 588,
+          "printedPage": 569
+        },
+        {
+          "number": "30.3",
+          "title": "Evolution of Early Genus Homo",
+          "pdfPage": 591,
+          "printedPage": 572
+        },
+        {
+          "number": "30.4",
+          "title": "Evolution of Later Genus Homo",
+          "pdfPage": 592,
+          "printedPage": 573
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "title": "Animal Organization and Homeostasis",
+      "pdfPage": 600,
+      "printedPage": 581,
+      "sections": [
+        {
+          "number": "31.1",
+          "title": "Types of Tissues",
+          "pdfPage": 601,
+          "printedPage": 582
+        },
+        {
+          "number": "31.2",
+          "title": "Organs, Organ Systems, and Body Cavities",
+          "pdfPage": 608,
+          "printedPage": 589
+        },
+        {
+          "number": "31.3",
+          "title": "The Integumentary System",
+          "pdfPage": 610,
+          "printedPage": 591
+        },
+        {
+          "number": "31.4",
+          "title": "Homeostasis",
+          "pdfPage": 613,
+          "printedPage": 594
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "title": "Circulation and Cardiovascular Systems",
+      "pdfPage": 619,
+      "printedPage": 600,
+      "sections": [
+        {
+          "number": "32.1",
+          "title": "Transport in Invertebrates",
+          "pdfPage": 620,
+          "printedPage": 601
+        },
+        {
+          "number": "32.2",
+          "title": "Transport in Vertebrates",
+          "pdfPage": 622,
+          "printedPage": 603
+        },
+        {
+          "number": "32.3",
+          "title": "The Human Cardiovascular System",
+          "pdfPage": 624,
+          "printedPage": 605
+        },
+        {
+          "number": "32.4",
+          "title": "Blood",
+          "pdfPage": 632,
+          "printedPage": 613
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "title": "The Lymphatic and Immune Systems",
+      "pdfPage": 640,
+      "printedPage": 621,
+      "sections": [
+        {
+          "number": "33.1",
+          "title": "Evolution of Immune Systems",
+          "pdfPage": 641,
+          "printedPage": 622
+        },
+        {
+          "number": "33.2",
+          "title": "The Lymphatic System",
+          "pdfPage": 642,
+          "printedPage": 623
+        },
+        {
+          "number": "33.3",
+          "title": "Innate Immune Defenses",
+          "pdfPage": 644,
+          "printedPage": 625
+        },
+        {
+          "number": "33.4",
+          "title": "Adaptive Immune Defenses",
+          "pdfPage": 647,
+          "printedPage": 628
+        },
+        {
+          "number": "33.5",
+          "title": "Immune System Disorders and Adverse Reactions",
+          "pdfPage": 655,
+          "printedPage": 636
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "title": "Digestive Systems and Nutrition",
+      "pdfPage": 660,
+      "printedPage": 641,
+      "sections": [
+        {
+          "number": "34.1",
+          "title": "Digestive Tracts",
+          "pdfPage": 661,
+          "printedPage": 642
+        },
+        {
+          "number": "34.2",
+          "title": "The Human Digestive System",
+          "pdfPage": 664,
+          "printedPage": 645
+        },
+        {
+          "number": "34.3",
+          "title": "Digestive Enzymes",
+          "pdfPage": 670,
+          "printedPage": 651
+        },
+        {
+          "number": "34.4",
+          "title": "Nutrition and Human Health",
+          "pdfPage": 671,
+          "printedPage": 652
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "title": "Respiratory Systems",
+      "pdfPage": 678,
+      "printedPage": 659,
+      "sections": [
+        {
+          "number": "35.1",
+          "title": "Gas-Exchange Surfaces",
+          "pdfPage": 679,
+          "printedPage": 660
+        },
+        {
+          "number": "35.2",
+          "title": "Breathing and Transport of Gases",
+          "pdfPage": 684,
+          "printedPage": 665
+        },
+        {
+          "number": "35.3",
+          "title": "Respiration and Human Health",
+          "pdfPage": 688,
+          "printedPage": 669
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "title": "Body Fluid Regulation and Excretory Systems",
+      "pdfPage": 696,
+      "printedPage": 677,
+      "sections": [
+        {
+          "number": "36.1",
+          "title": "Animal Excretory Systems",
+          "pdfPage": 697,
+          "printedPage": 678
+        },
+        {
+          "number": "36.2",
+          "title": "The Human Urinary System",
+          "pdfPage": 700,
+          "printedPage": 681
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "title": "Neurons and Nervous Systems",
+      "pdfPage": 710,
+      "printedPage": 691,
+      "sections": [
+        {
+          "number": "37.1",
+          "title": "Evolution of the Nervous System",
+          "pdfPage": 711,
+          "printedPage": 692
+        },
+        {
+          "number": "37.2",
+          "title": "Nervous Tissue",
+          "pdfPage": 714,
+          "printedPage": 695
+        },
+        {
+          "number": "37.3",
+          "title": "The Central Nervous System",
+          "pdfPage": 718,
+          "printedPage": 699
+        },
+        {
+          "number": "37.4",
+          "title": "The Peripheral Nervous System",
+          "pdfPage": 726,
+          "printedPage": 707
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "title": "Sense Organs",
+      "pdfPage": 733,
+      "printedPage": 714,
+      "sections": [
+        {
+          "number": "38.1",
+          "title": "Sensory Receptors",
+          "pdfPage": 734,
+          "printedPage": 715
+        },
+        {
+          "number": "38.2",
+          "title": "Chemical Senses",
+          "pdfPage": 735,
+          "printedPage": 716
+        },
+        {
+          "number": "38.3",
+          "title": "Sense of Vision",
+          "pdfPage": 737,
+          "printedPage": 718
+        },
+        {
+          "number": "38.4",
+          "title": "Senses of Hearing and Balance",
+          "pdfPage": 743,
+          "printedPage": 724
+        },
+        {
+          "number": "38.5",
+          "title": "Somatic Senses",
+          "pdfPage": 748,
+          "printedPage": 729
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "title": "Locomotion and Support Systems",
+      "pdfPage": 752,
+      "printedPage": 733,
+      "sections": [
+        {
+          "number": "39.1",
+          "title": "Diversity of Skeletons",
+          "pdfPage": 753,
+          "printedPage": 734
+        },
+        {
+          "number": "39.2",
+          "title": "The Human Skeletal System",
+          "pdfPage": 755,
+          "printedPage": 736
+        },
+        {
+          "number": "39.3",
+          "title": "The Muscular System",
+          "pdfPage": 761,
+          "printedPage": 742
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "title": "Hormones and Endocrine Systems",
+      "pdfPage": 769,
+      "printedPage": 750,
+      "sections": [
+        {
+          "number": "40.1",
+          "title": "Animal Hormones",
+          "pdfPage": 770,
+          "printedPage": 751
+        },
+        {
+          "number": "40.2",
+          "title": "Hypothalamus and Pituitary Gland",
+          "pdfPage": 774,
+          "printedPage": 755
+        },
+        {
+          "number": "40.3",
+          "title": "Other Endocrine Glands and Hormones",
+          "pdfPage": 777,
+          "printedPage": 758
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "title": "Reproductive Systems",
+      "pdfPage": 789,
+      "printedPage": 770,
+      "sections": [
+        {
+          "number": "41.1",
+          "title": "How Animals Reproduce",
+          "pdfPage": 790,
+          "printedPage": 771
+        },
+        {
+          "number": "41.2",
+          "title": "Human Male Reproductive System",
+          "pdfPage": 792,
+          "printedPage": 773
+        },
+        {
+          "number": "41.3",
+          "title": "Human Female Reproductive System",
+          "pdfPage": 796,
+          "printedPage": 777
+        },
+        {
+          "number": "41.4",
+          "title": "Control of Human Reproduction",
+          "pdfPage": 800,
+          "printedPage": 781
+        },
+        {
+          "number": "41.5",
+          "title": "Sexually Transmitted Diseases",
+          "pdfPage": 804,
+          "printedPage": 785
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "title": "Animal Development",
+      "pdfPage": 812,
+      "printedPage": 793,
+      "sections": [
+        {
+          "number": "42.1",
+          "title": "Early Developmental Stages",
+          "pdfPage": 813,
+          "printedPage": 794
+        },
+        {
+          "number": "42.2",
+          "title": "Developmental Processes",
+          "pdfPage": 817,
+          "printedPage": 798
+        },
+        {
+          "number": "42.3",
+          "title": "Human Embryonic and Fetal Development",
+          "pdfPage": 821,
+          "printedPage": 802
+        },
+        {
+          "number": "42.4",
+          "title": "The Aging Process",
+          "pdfPage": 828,
+          "printedPage": 809
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "title": "Behavioral Ecology",
+      "pdfPage": 836,
+      "printedPage": 817,
+      "sections": [
+        {
+          "number": "43.1",
+          "title": "Inheritance Influences Behavior",
+          "pdfPage": 837,
+          "printedPage": 818
+        },
+        {
+          "number": "43.2",
+          "title": "The Environment Influences Behavior",
+          "pdfPage": 839,
+          "printedPage": 820
+        },
+        {
+          "number": "43.3",
+          "title": "Animal Communication",
+          "pdfPage": 843,
+          "printedPage": 824
+        },
+        {
+          "number": "43.4",
+          "title": "Behaviors That Increase Fitness",
+          "pdfPage": 847,
+          "printedPage": 828
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "title": "Population Ecology",
+      "pdfPage": 855,
+      "printedPage": 836,
+      "sections": [
+        {
+          "number": "44.1",
+          "title": "Scope of Ecology",
+          "pdfPage": 856,
+          "printedPage": 837
+        },
+        {
+          "number": "44.2",
+          "title": "Demographics of Populations",
+          "pdfPage": 857,
+          "printedPage": 838
+        },
+        {
+          "number": "44.3",
+          "title": "Population Growth Models",
+          "pdfPage": 860,
+          "printedPage": 841
+        },
+        {
+          "number": "44.4",
+          "title": "Regulation of Population Size",
+          "pdfPage": 863,
+          "printedPage": 844
+        },
+        {
+          "number": "44.5",
+          "title": "Life History Patterns",
+          "pdfPage": 865,
+          "printedPage": 846
+        },
+        {
+          "number": "44.6",
+          "title": "Human Population Growth",
+          "pdfPage": 868,
+          "printedPage": 849
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "title": "Community and Ecosystem Ecology",
+      "pdfPage": 874,
+      "printedPage": 855,
+      "sections": [
+        {
+          "number": "45.1",
+          "title": "Ecology of Communities",
+          "pdfPage": 875,
+          "printedPage": 856
+        },
+        {
+          "number": "45.2",
+          "title": "Community Development",
+          "pdfPage": 885,
+          "printedPage": 866
+        },
+        {
+          "number": "45.3",
+          "title": "Dynamics of an Ecosystem",
+          "pdfPage": 887,
+          "printedPage": 868
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "title": "Major Ecosystems of the Biosphere",
+      "pdfPage": 900,
+      "printedPage": 881,
+      "sections": [
+        {
+          "number": "46.1",
+          "title": "Climate and the Biosphere",
+          "pdfPage": 901,
+          "printedPage": 882
+        },
+        {
+          "number": "46.2",
+          "title": "Terrestrial Ecosystems",
+          "pdfPage": 904,
+          "printedPage": 885
+        },
+        {
+          "number": "46.3",
+          "title": "Aquatic Ecosystems",
+          "pdfPage": 914,
+          "printedPage": 895
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "title": "Conservation of Biodiversity",
+      "pdfPage": 924,
+      "printedPage": 905,
+      "sections": [
+        {
+          "number": "47.1",
+          "title": "Conservation Biology and Biodiversity",
+          "pdfPage": 925,
+          "printedPage": 906
+        },
+        {
+          "number": "47.2",
+          "title": "Value of Biodiversity",
+          "pdfPage": 927,
+          "printedPage": 908
+        },
+        {
+          "number": "47.3",
+          "title": "Causes of Extinction",
+          "pdfPage": 930,
+          "printedPage": 911
+        },
+        {
+          "number": "47.4",
+          "title": "Conservation Techniques",
+          "pdfPage": 935,
+          "printedPage": 916
+        }
+      ]
+    }
+  ],
+  "bookUnits": [
+    {
+      "number": 1,
+      "title": "The Cell",
+      "pdfPage": 37,
+      "printedPage": 18,
+      "chapters": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Genetic Basis of Life",
+      "pdfPage": 165,
+      "printedPage": 146,
+      "chapters": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Evolution",
+      "pdfPage": 279,
+      "printedPage": 260,
+      "chapters": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Microbiology and Evolution",
+      "pdfPage": 371,
+      "printedPage": 352,
+      "chapters": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Plant Evolution and Biology",
+      "pdfPage": 429,
+      "printedPage": 410,
+      "chapters": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Animal Evolution and Diversity",
+      "pdfPage": 531,
+      "printedPage": 512,
+      "chapters": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Comparative Animal Biology",
+      "pdfPage": 599,
+      "printedPage": 580,
+      "chapters": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Behavior and Ecology",
+      "pdfPage": 835,
+      "printedPage": 816,
+      "chapters": [
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    }
+  ],
+  "course": {
+    "name": "Advanced Biology",
+    "school": "Maret School",
+    "year": "2026-27",
+    "periodMinutes": 70,
+    "grading": "Points based since 2026-09-02: unit exams 70%, lab reports 20%, Wonder Period presentations 10%. Standards are the exam blueprint.",
+    "units": [
+      {
+        "number": 1,
+        "nn": "01",
+        "slug": "water",
+        "title": "Water and the chemistry of life",
+        "accent": "#4FA3E0",
+        "accentName": "water blue",
+        "centralIdea": "B1.2",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B1.1",
+            "title": "Atoms, bonding, and polarity",
+            "central": false,
+            "reading": [
+              {
+                "sections": "2.1 to 2.2",
+                "printedPages": "20 to 26"
+              }
+            ]
+          },
+          {
+            "code": "B1.2",
+            "title": "Water's emergent properties",
+            "central": true,
+            "reading": [
+              {
+                "sections": "2.3",
+                "printedPages": "26 to 30"
+              }
+            ]
+          },
+          {
+            "code": "B1.3",
+            "title": "pH, acids, bases, and buffers",
+            "central": false,
+            "reading": [
+              {
+                "sections": "2.4",
+                "printedPages": "30 to 34"
+              }
+            ]
+          },
+          {
+            "code": "B1.4",
+            "title": "Carbon chemistry, functional groups, and polymers",
+            "central": false,
+            "reading": [
+              {
+                "sections": "3.1",
+                "printedPages": "36 to 39"
+              },
+              {
+                "sections": "18.1",
+                "printedPages": "318 to 323"
+              }
+            ]
+          },
+          {
+            "code": "B1.5",
+            "title": "Macromolecule structure determines function",
+            "central": false,
+            "reading": [
+              {
+                "sections": "3.2 to 3.5",
+                "printedPages": "39 to 56"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "nn": "02",
+        "slug": "cells-and-membranes",
+        "title": "Cells and membranes",
+        "accent": "#E0A13F",
+        "accentName": "lipid gold",
+        "centralIdea": "B2.3",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B2.1",
+            "title": "Cell structure and organization",
+            "central": false,
+            "reading": [
+              {
+                "sections": "4.1 to 4.8",
+                "printedPages": "58 to 81"
+              }
+            ]
+          },
+          {
+            "code": "B2.2",
+            "title": "Membrane structure and selective permeability",
+            "central": false,
+            "reading": [
+              {
+                "sections": "5.1",
+                "printedPages": "83 to 88"
+              }
+            ]
+          },
+          {
+            "code": "B2.3",
+            "title": "Passive transport: diffusion, osmosis, tonicity",
+            "central": true,
+            "reading": [
+              {
+                "sections": "5.2",
+                "printedPages": "88 to 91"
+              }
+            ]
+          },
+          {
+            "code": "B2.4",
+            "title": "Active transport",
+            "central": false,
+            "reading": [
+              {
+                "sections": "5.3",
+                "printedPages": "91 to 93"
+              }
+            ]
+          },
+          {
+            "code": "B2.5",
+            "title": "Bulk transport: exocytosis and endocytosis",
+            "central": false,
+            "reading": [
+              {
+                "sections": "5.3",
+                "printedPages": "93 to 95"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "nn": "03",
+        "slug": "energy-and-enzymes",
+        "title": "Energy and enzymes",
+        "accent": "#E5673A",
+        "accentName": "ember orange",
+        "centralIdea": "B3.4",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B3.1",
+            "title": "Energy and thermodynamics",
+            "central": false,
+            "reading": [
+              {
+                "sections": "6.1",
+                "printedPages": "101 to 103"
+              }
+            ]
+          },
+          {
+            "code": "B3.2",
+            "title": "Free energy and spontaneity",
+            "central": false,
+            "reading": [
+              {
+                "sections": "6.2",
+                "printedPages": "103 to 104"
+              }
+            ]
+          },
+          {
+            "code": "B3.3",
+            "title": "ATP and energy coupling",
+            "central": false,
+            "reading": [
+              {
+                "sections": "6.2",
+                "printedPages": "104 to 105"
+              }
+            ]
+          },
+          {
+            "code": "B3.4",
+            "title": "Enzymes",
+            "central": true,
+            "reading": [
+              {
+                "sections": "6.3",
+                "printedPages": "105 to 109"
+              }
+            ]
+          },
+          {
+            "code": "B3.5",
+            "title": "Enzyme regulation",
+            "central": false,
+            "reading": [
+              {
+                "sections": "6.3 to 6.4",
+                "printedPages": "105 to 113"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "nn": "04",
+        "slug": "cellular-respiration",
+        "title": "Cellular respiration",
+        "accent": "#D9534F",
+        "accentName": "oxygen red",
+        "centralIdea": "B4.2",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B4.1",
+            "title": "Redox and the overview of respiration",
+            "central": false,
+            "reading": [
+              {
+                "sections": "8.1",
+                "printedPages": "130 to 132"
+              }
+            ]
+          },
+          {
+            "code": "B4.2",
+            "title": "Glycolysis",
+            "central": true,
+            "reading": [
+              {
+                "sections": "8.2",
+                "printedPages": "132 to 134"
+              }
+            ]
+          },
+          {
+            "code": "B4.3",
+            "title": "Pyruvate oxidation and the citric acid cycle",
+            "central": false,
+            "reading": [
+              {
+                "sections": "8.4",
+                "printedPages": "136 to 139"
+              }
+            ]
+          },
+          {
+            "code": "B4.4",
+            "title": "Oxidative phosphorylation (electron transport and chemiosmosis)",
+            "central": false,
+            "reading": [
+              {
+                "sections": "8.4",
+                "printedPages": "139 to 141"
+              }
+            ]
+          },
+          {
+            "code": "B4.5",
+            "title": "Fermentation and anaerobic respiration",
+            "central": false,
+            "reading": [
+              {
+                "sections": "8.3",
+                "printedPages": "134 to 136"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "nn": "05",
+        "slug": "photosynthesis",
+        "title": "Photosynthesis",
+        "accent": "#4CAF50",
+        "accentName": "chlorophyll green",
+        "centralIdea": "B5.4",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B5.1",
+            "title": "Overview of photosynthesis and the chloroplast",
+            "central": false,
+            "reading": [
+              {
+                "sections": "7.1 to 7.2",
+                "printedPages": "115 to 119"
+              }
+            ]
+          },
+          {
+            "code": "B5.2",
+            "title": "Capturing light: pigments and the spectrum",
+            "central": false,
+            "reading": [
+              {
+                "sections": "7.3",
+                "printedPages": "119 to 120"
+              }
+            ]
+          },
+          {
+            "code": "B5.3",
+            "title": "The light reactions",
+            "central": false,
+            "reading": [
+              {
+                "sections": "7.3",
+                "printedPages": "120 to 123"
+              }
+            ]
+          },
+          {
+            "code": "B5.4",
+            "title": "The Calvin cycle",
+            "central": true,
+            "reading": [
+              {
+                "sections": "7.4",
+                "printedPages": "123 to 125"
+              }
+            ]
+          },
+          {
+            "code": "B5.5",
+            "title": "C4 and CAM photosynthesis",
+            "central": false,
+            "reading": [
+              {
+                "sections": "7.5",
+                "printedPages": "125 to 128"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "nn": "06",
+        "slug": "molecular-genetics",
+        "title": "Molecular genetics",
+        "accent": "#8E6FE0",
+        "accentName": "nucleotide violet",
+        "centralIdea": "B6.4",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B6.1",
+            "title": "DNA structure",
+            "central": false,
+            "reading": [
+              {
+                "sections": "12.1",
+                "printedPages": "208 to 211"
+              }
+            ]
+          },
+          {
+            "code": "B6.2",
+            "title": "DNA replication",
+            "central": false,
+            "reading": [
+              {
+                "sections": "12.2",
+                "printedPages": "211 to 216"
+              }
+            ]
+          },
+          {
+            "code": "B6.3",
+            "title": "Transcription",
+            "central": false,
+            "reading": [
+              {
+                "sections": "12.3 to 12.4",
+                "printedPages": "216 to 220"
+              }
+            ]
+          },
+          {
+            "code": "B6.4",
+            "title": "Translation",
+            "central": true,
+            "reading": [
+              {
+                "sections": "12.5",
+                "printedPages": "220 to 227"
+              }
+            ]
+          },
+          {
+            "code": "B6.5",
+            "title": "Mutations",
+            "central": false,
+            "reading": [
+              {
+                "sections": "13.3",
+                "printedPages": "238 to 243"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "nn": "07",
+        "slug": "cell-division-and-genetics",
+        "title": "Cell division and genetics",
+        "accent": "#D05BA6",
+        "accentName": "chromosome stain",
+        "centralIdea": "B7.2",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B7.1",
+            "title": "Cell cycle, mitosis, and cancer",
+            "central": false,
+            "reading": [
+              {
+                "sections": "9.1 to 9.4",
+                "printedPages": "148 to 161"
+              }
+            ]
+          },
+          {
+            "code": "B7.2",
+            "title": "Meiosis and genetic variation",
+            "central": true,
+            "reading": [
+              {
+                "sections": "10.1 to 10.4",
+                "printedPages": "167 to 176"
+              }
+            ]
+          },
+          {
+            "code": "B7.3",
+            "title": "Mendelian genetics: segregation and independent assortment",
+            "central": false,
+            "reading": [
+              {
+                "sections": "11.1 to 11.2",
+                "printedPages": "187 to 194"
+              }
+            ]
+          },
+          {
+            "code": "B7.4",
+            "title": "Beyond Mendel: incomplete dominance, codominance, multiple alleles, and sex linkage",
+            "central": false,
+            "reading": [
+              {
+                "sections": "11.4",
+                "printedPages": "198 to 206"
+              },
+              {
+                "sections": "10.6",
+                "printedPages": "177 to 185"
+              }
+            ]
+          },
+          {
+            "code": "B7.5",
+            "title": "Chromosomal disorders and pedigrees",
+            "central": false,
+            "reading": [
+              {
+                "sections": "11.3",
+                "printedPages": "194 to 198"
+              },
+              {
+                "sections": "10.6",
+                "printedPages": "177 to 185"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "nn": "08",
+        "slug": "evolution",
+        "title": "Evolution",
+        "accent": "#3BAFA0",
+        "accentName": "deep-time teal",
+        "centralIdea": "B8.2",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B8.1",
+            "title": "Descent with modification",
+            "central": false,
+            "reading": [
+              {
+                "sections": "15.1 to 15.2",
+                "printedPages": "262 to 270"
+              }
+            ]
+          },
+          {
+            "code": "B8.2",
+            "title": "Natural selection",
+            "central": true,
+            "reading": [
+              {
+                "sections": "15.3",
+                "printedPages": "270 to 278"
+              },
+              {
+                "sections": "16.2",
+                "printedPages": "286 to 290"
+              }
+            ]
+          },
+          {
+            "code": "B8.3",
+            "title": "Hardy-Weinberg and genetic variation",
+            "central": false,
+            "reading": [
+              {
+                "sections": "16.1",
+                "printedPages": "280 to 286"
+              }
+            ]
+          },
+          {
+            "code": "B8.4",
+            "title": "Mechanisms of evolution",
+            "central": false,
+            "reading": [
+              {
+                "sections": "16.3",
+                "printedPages": "290 to 295"
+              }
+            ]
+          },
+          {
+            "code": "B8.5",
+            "title": "Speciation",
+            "central": false,
+            "reading": [
+              {
+                "sections": "17.1 to 17.2",
+                "printedPages": "297 to 308"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "nn": "09",
+        "slug": "ecology",
+        "title": "Ecology",
+        "accent": "#8DB33A",
+        "accentName": "canopy moss",
+        "centralIdea": "B9.1",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B9.1",
+            "title": "Population growth",
+            "central": true,
+            "reading": [
+              {
+                "sections": "44.1 to 44.3",
+                "printedPages": "837 to 846"
+              }
+            ]
+          },
+          {
+            "code": "B9.2",
+            "title": "Community ecology",
+            "central": false,
+            "reading": [
+              {
+                "sections": "45.1 to 45.2",
+                "printedPages": "856 to 868"
+              }
+            ]
+          },
+          {
+            "code": "B9.3",
+            "title": "Ecosystems and energy flow",
+            "central": false,
+            "reading": [
+              {
+                "sections": "45.3",
+                "printedPages": "868 to 874"
+              }
+            ]
+          },
+          {
+            "code": "B9.4",
+            "title": "Biogeochemical cycles",
+            "central": false,
+            "reading": [
+              {
+                "sections": "45.3",
+                "printedPages": "874 to 880"
+              }
+            ]
+          },
+          {
+            "code": "B9.5",
+            "title": "Biomes, climate, and human impact",
+            "central": false,
+            "reading": [
+              {
+                "sections": "46.1 to 46.3",
+                "printedPages": "882 to 904"
+              },
+              {
+                "sections": "47.3",
+                "printedPages": "911 to 916"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "nn": "10",
+        "slug": "anatomy-and-physiology",
+        "title": "Anatomy and physiology",
+        "accent": "#E06C8A",
+        "accentName": "tissue rose",
+        "centralIdea": "B10.1",
+        "readingMapDerived": false,
+        "standards": [
+          {
+            "code": "B10.1",
+            "title": "Homeostasis and feedback",
+            "central": true,
+            "reading": [
+              {
+                "sections": "31.1 to 31.2",
+                "printedPages": "582 to 591"
+              },
+              {
+                "sections": "31.4",
+                "printedPages": "594 to 599"
+              }
+            ]
+          },
+          {
+            "code": "B10.2",
+            "title": "The nervous system",
+            "central": false,
+            "reading": [
+              {
+                "sections": "37.2 to 37.3",
+                "printedPages": "695 to 707"
+              }
+            ]
+          },
+          {
+            "code": "B10.3",
+            "title": "Circulation and gas exchange",
+            "central": false,
+            "reading": [
+              {
+                "sections": "32.3",
+                "printedPages": "605 to 613"
+              },
+              {
+                "sections": "35.1 to 35.2",
+                "printedPages": "660 to 669"
+              }
+            ]
+          },
+          {
+            "code": "B10.4",
+            "title": "Digestion and nutrition",
+            "central": false,
+            "reading": [
+              {
+                "sections": "34.2 to 34.3",
+                "printedPages": "645 to 652"
+              }
+            ]
+          },
+          {
+            "code": "B10.5",
+            "title": "The immune system",
+            "central": false,
+            "reading": [
+              {
+                "sections": "33.3 to 33.4",
+                "printedPages": "625 to 640"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

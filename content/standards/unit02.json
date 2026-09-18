@@ -1,0 +1,178 @@
+{
+  "number": 2,
+  "slug": "cells-and-membranes",
+  "nn": "02",
+  "title": "Cells and membranes",
+  "titleAsPrinted": "Cells and Membranes",
+  "folder": "unit-02-cells-and-membranes",
+  "accent": "#E0A13F",
+  "accentName": "lipid gold",
+  "centralIdea": "B2.3",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B2.1 to B2.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B2.1 (2), B2.2 (2), B2.3 (1), B2.4 (1), B2.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B2.3 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B2.2: the fluid-mosaic membrane, tonicity arrows, or a labeled cell"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B2.2 (the fluid-mosaic passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-02-cells-and-membranes/01_Overview_and_Planning/U2_Standards_Student_Copy.docx",
+    "teacher": "../unit-02-cells-and-membranes/01_Overview_and_Planning/U2_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B2.1",
+      "title": "Cell structure and organization",
+      "titleAsPrinted": "Cell Structure and Organization",
+      "central": false,
+      "description": "Students relate cell structures to functions and explain how compartmentalization and small size support cell function.",
+      "iCan": [
+        "I can tell prokaryotic and eukaryotic cells apart and name what all cells share",
+        "I can name the major organelles and say what each one does",
+        "I can explain the endomembrane system as a protein-traffic path (nucleus to ER to Golgi to vesicles to membrane)",
+        "I can explain why cells stay small using the surface-area-to-volume ratio"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2, Q3; SA 11, 12",
+        "points": 16
+      },
+      "reading": [
+        {
+          "sections": "4.1 to 4.8",
+          "printedPages": "58 to 81",
+          "pdfPages": "77 to 100",
+          "chapter": 4,
+          "sectionTitle": "Cellular Level of Organization"
+        }
+      ]
+    },
+    {
+      "code": "B2.2",
+      "title": "Membrane structure and selective permeability",
+      "titleAsPrinted": "Membrane Structure and Selective Permeability",
+      "central": false,
+      "description": "Students explain the fluid mosaic model and how membrane structure produces selective permeability.",
+      "iCan": [
+        "I can describe the membrane as a fluid mosaic (phospholipid bilayer with embedded proteins)",
+        "I can explain what makes a membrane fluid and list what membrane proteins do",
+        "I can explain selective permeability: what crosses the bilayer freely and what needs a protein"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q4, Q5; SA 13, 14; Part 4 Diagram",
+        "points": 29
+      },
+      "reading": [
+        {
+          "sections": "5.1",
+          "printedPages": "83 to 88",
+          "pdfPages": "102 to 107",
+          "chapter": 5,
+          "sectionTitle": "Plasma Membrane Structure and Function"
+        }
+      ]
+    },
+    {
+      "code": "B2.3",
+      "title": "Passive transport: diffusion, osmosis, tonicity",
+      "titleAsPrinted": "Passive Transport: Diffusion, Osmosis, Tonicity",
+      "central": true,
+      "description": "Students predict the direction of passive movement across membranes and the effect of tonicity on cells.",
+      "iCan": [
+        "I can define diffusion and facilitated diffusion and tell them apart",
+        "I can define osmosis and predict which way water moves across a membrane",
+        "I can use tonicity to predict whether a cell shrinks, swells, or stays the same in hypertonic, hypotonic, or isotonic surroundings",
+        "I can use the percent-mass-change versus molarity graph to find a cell's internal solute concentration"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q6, Q7; SA 15; Part 3 CER",
+        "points": 29
+      },
+      "reading": [
+        {
+          "sections": "5.2",
+          "printedPages": "88 to 91",
+          "pdfPages": "107 to 110",
+          "chapter": 5,
+          "sectionTitle": "Passive Transport Across a Membrane"
+        }
+      ]
+    },
+    {
+      "code": "B2.4",
+      "title": "Active transport",
+      "titleAsPrinted": "Active Transport",
+      "central": false,
+      "description": "Students explain how cells move solutes against their gradients using energy.",
+      "iCan": [
+        "I can define active transport and explain why it needs energy",
+        "I can explain the sodium-potassium pump and the gradient it builds",
+        "I can tell primary active transport from cotransport, and active from passive transport"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q8, Q9; SA 16",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "5.3",
+          "printedPages": "91 to 93",
+          "pdfPages": "110 to 112",
+          "chapter": 5,
+          "sectionTitle": "Active Transport Across a Membrane"
+        }
+      ]
+    },
+    {
+      "code": "B2.5",
+      "title": "Bulk transport: exocytosis and endocytosis",
+      "titleAsPrinted": "Bulk Transport: Exocytosis and Endocytosis",
+      "central": false,
+      "description": "Students explain how cells move large materials in bulk using vesicles.",
+      "iCan": [
+        "I can define exocytosis and give an example",
+        "I can define endocytosis and tell phagocytosis, pinocytosis, and receptor-mediated endocytosis apart",
+        "I can explain why bulk transport needs energy and vesicles, and connect it to the endomembrane system"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q10; SA 17",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "5.3",
+          "printedPages": "93 to 95",
+          "pdfPages": "112 to 114",
+          "chapter": 5,
+          "sectionTitle": "Active Transport Across a Membrane"
+        }
+      ]
+    }
+  ]
+}

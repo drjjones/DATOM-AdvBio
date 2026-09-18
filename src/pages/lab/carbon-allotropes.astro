@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const models = [
+  { id: 'diamond', name: 'Diamond', subtitle: 'Four bonds per carbon, sp3' },
+  { id: 'graphite', name: 'Graphite', subtitle: 'Three sheets, weakly stacked' },
+  { id: 'graphene', name: 'Graphene', subtitle: 'A single sheet, one atom thick' },
+  { id: 'c60', name: 'C60 fullerene', subtitle: 'Sixty carbons, twelve pentagons' },
+  { id: 'nanotube', name: '(10,0) carbon nanotube', subtitle: 'Graphene rolled into a tube, joined edge to edge' },
+  { id: 'amorphous', name: 'Amorphous carbon', subtitle: 'No repeating pattern, colored by bond count' },
+];
+---
+<Layout title="Carbon allotropes" description="Six carbon allotropes from real coordinates: diamond, graphite, graphene, C60, a (10,0) nanotube, and amorphous carbon, with a six step walkthrough." accent="#9b6be0" bodyClass="lab-carbon">
+  <canvas id="gl" class="gl-backdrop" aria-hidden="true"></canvas>
+
+  <section class="page-head" data-section id="intro">
+    <p class="eyebrow">Lab · reference build</p>
+    <h1>Carbon allotropes</h1>
+    <p class="lede">Same element, six materials. The only thing that changes is how each carbon bonds to its neighbors.</p>
+    <div class="toolbar">
+      <button class="btn" type="button" data-play aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true" data-icon="pause"><path d="M8 5v14M16 5v14"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true" data-icon="play" hidden><path d="M7 4l12 8-12 8z"/></svg>
+        <span data-label>Pause rotation</span>
+      </button>
+      <button class="btn primary" type="button" data-start-walkthrough>Start walkthrough</button>
+      <button class="btn ghost" type="button" data-present-section="gallery">Present the gallery</button>
+    </div>
+    <ul class="legend" aria-label="Color key">
+      <li><span class="swatch" style="background:#9b6be0"></span>Four bonds (sp3)</li>
+      <li><span class="swatch" style="background:#5fb3b3"></span>Three bonds (sp2)</li>
+      <li><span class="swatch" style="background:#e0b04f"></span>Two or fewer</li>
+      <li><span class="swatch" style="background:#f2785c"></span>Pentagon in C60</li>
+      <li class="hint">Drag to rotate. Tap an atom for its bond count. Expand a model for full orbit and zoom (pinch, the zoom buttons, or Ctrl with the wheel).</li>
+    </ul>
+  </section>
+
+  <section class="gallery" id="gallery" data-section aria-label="Six carbon allotropes">
+    {models.map((m) => (
+      <article class="tile" data-model={m.id} data-no-swipe>
+        <div class="tile-view" data-view role="img" aria-label={`Rotating three-dimensional model of ${m.name}. Drag to rotate; tap an atom for its bond count.`}></div>
+        <div class="atom-label" data-atom-label hidden></div>
+        <div class="tile-caption">
+          <div class="grow">
+            <h2>{m.name}</h2>
+            <p>{m.subtitle} <span class="count" data-count></span></p>
+            <ul class="facts" data-facts></ul>
+          </div>
+          <button class="btn icon" type="button" data-expand aria-label={`Expand ${m.name}`}>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+          <div class="zoom" role="group" aria-label="Zoom">
+            <button class="btn icon" type="button" data-zoom="in" aria-label={`Zoom in on ${m.name}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <button class="btn icon" type="button" data-zoom="out" aria-label={`Zoom out of ${m.name}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+          </div>
+          <button class="btn" type="button" data-close>Close</button>
+        </div>
+      </article>
+    ))}
+
+    <aside class="walkthrough" id="walkthrough" hidden data-present-capture aria-label="Walkthrough">
+      <div class="wt-head"><span data-wt-counter>Step 1 of 6</span><span aria-hidden="true">·</span><strong data-wt-name></strong></div>
+      <p class="wt-sentence" data-wt-sentence></p>
+      <p class="wt-question"><span class="pill">Predict</span> <span data-wt-question></span></p>
+      <div class="wt-options" data-wt-options role="group" aria-label="Answer choices"></div>
+      <p class="wt-feedback" data-wt-feedback aria-live="polite"></p>
+      <div class="wt-nav">
+        <button class="btn" type="button" data-wt-prev>Previous</button>
+        <button class="btn primary" type="button" data-wt-next>Next</button>
+        <span class="grow"></span>
+        <button class="btn ghost" type="button" data-wt-exit>Exit walkthrough</button>
+      </div>
+    </aside>
+  </section>
+
+  <p class="source">Geometry generated from published lattice constants: diamond a = 0.3567 nm; graphite a = 0.2461 nm, interlayer 0.3354 nm; C60 truncated icosahedron of radius 0.355 nm; (10,0) tube rolled from the graphene lattice. Amorphous carbon is a seeded random network, not a measured structure.</p>
+
+  <script>
+    import '../../lab/carbon/main';
+  </script>
+</Layout>
+
+<style>
+  .gl-backdrop { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.4rem 0 1.2rem; }
+  .legend { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.3rem; color: var(--fg-muted); font-size: 0.95rem; align-items: center; }
+  .legend li { display: flex; align-items: center; gap: 0.5rem; min-height: 28px; }
+  .legend .swatch { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+  .legend .hint { flex-basis: 100%; }
+
+  .gallery { position: relative; display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @media (max-width: 899px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .tile { position: relative; display: flex; flex-direction: column; min-height: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: transparent; }
+  .tile-view { position: relative; aspect-ratio: 4 / 3; touch-action: pan-y; cursor: grab; }
+  .tile-view:active { cursor: grabbing; }
+  .tile-caption { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.8rem 1rem 0.9rem; border-top: 1px solid var(--line); background: var(--bg-card); }
+  .tile-caption .grow { flex: 1; min-width: 0; }
+  .tile-caption h2 { font-size: 1.12rem; margin: 0 0 0.15rem; }
+  .tile-caption p { margin: 0; color: var(--fg-muted); font-size: 0.92rem; }
+  .tile-caption .count { display: block; color: var(--fg-faint); }
+  .facts { display: none; list-style: none; padding: 0; margin: 0.7rem 0 0; color: var(--fg-muted); font-size: 0.97rem; gap: 0.3rem; }
+  .facts li { position: relative; padding-left: 1rem; }
+  .facts li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .atom-label { position: absolute; z-index: 2; transform: translate(-50%, calc(-100% - 14px)); padding: 0.35rem 0.65rem; border-radius: 8px; background: var(--bg-elev); border: 1px solid var(--line); box-shadow: var(--shadow); font-size: 0.9rem; white-space: nowrap; pointer-events: none; }
+  .atom-label[hidden] { display: none; }
+  [data-close], .zoom { display: none; }
+  .gallery.is-focused .tile.is-focus .zoom { display: flex; gap: 0.4rem; }
+
+  .gallery.is-focused .tile:not(.is-focus) { display: none; }
+  .gallery.is-focused .tile.is-focus { grid-column: 1 / -1; }
+  .gallery.is-focused .tile.is-focus .tile-view { aspect-ratio: auto; height: clamp(280px, 44vh, 680px); touch-action: none; }
+  .gallery.is-focused .tile.is-focus .facts { display: grid; }
+  .gallery.is-focused .tile.is-focus [data-expand] { display: none; }
+  .gallery.is-focused .tile.is-focus [data-close] { display: inline-flex; }
+  html.presenting .gallery.is-focused .tile.is-focus .tile-view { height: clamp(300px, 46vh, 760px); }
+
+  .walkthrough { grid-column: 1 / -1; display: grid; gap: 0.8rem; padding: 1.2rem 1.4rem; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); }
+  .walkthrough[hidden] { display: none; }
+  .wt-head { display: flex; align-items: center; gap: 0.7rem; color: var(--fg-muted); font-size: 0.92rem; }
+  .wt-head strong { color: var(--fg); }
+  .wt-sentence { margin: 0; max-width: 72ch; font-size: clamp(1.15rem, 1.7vw, 1.5rem); font-weight: 600; line-height: 1.35; }
+  .wt-question { margin: 0; font-size: 1.05rem; max-width: 72ch; }
+  .wt-options { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .wt-options :global(.btn) { border-radius: var(--radius-sm); text-align: left; padding: 0.6rem 1rem; white-space: normal; font-weight: 500; }
+  .wt-options :global(.btn[data-state="correct"]) { border-color: var(--ok); box-shadow: inset 0 0 0 1px var(--ok); }
+  .wt-options :global(.btn[data-state="wrong"]) { border-color: var(--bad); opacity: 0.8; }
+  .wt-feedback { min-height: 1.5em; margin: 0; max-width: 72ch; color: var(--fg-muted); }
+  .wt-feedback :global(strong) { color: var(--fg); }
+  .wt-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+  .wt-nav .grow { flex: 1; }
+</style>

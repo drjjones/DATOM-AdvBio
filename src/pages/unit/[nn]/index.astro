@@ -1,0 +1,46 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { units, sectionId, readingLabel, chaptersFor, type Unit } from '../../../lib/content';
+import { url } from '../../../lib/url';
+
+export function getStaticPaths() {
+  return units.map((u) => ({ params: { nn: u.nn }, props: { unit: u } }));
+}
+const { unit } = Astro.props as { unit: Unit };
+const central = unit.standards.find((s) => s.central)!;
+const chs = chaptersFor(unit);
+const chapterLabel = chs.length ? `Mader ${chs.length === 1 ? 'chapter' : 'chapters'} ${chs.map((c) => c.number).join(', ')}` : '';
+---
+<Layout title={`Unit ${unit.number}: ${unit.title}`} description={`${unit.title}. Five standards; the central idea is ${central.code}, ${central.title}.`} accent={unit.accent} unitLabel={`Unit ${unit.number}`}>
+  <section class="page-head" data-section id="overview">
+    <p class="eyebrow">Unit {unit.number} · {chapterLabel}</p>
+    <h1>{unit.title}</h1>
+    <p class="lede">Five standards. The central idea is {central.code}, {central.title.charAt(0).toLowerCase() + central.title.slice(1)}.</p>
+    <p class="note">The interactive models for this unit are in production. The standards, readings, and checklists below are live.</p>
+  </section>
+
+  {unit.standards.map((s, i) => (
+    <section class="standard-block" data-section id={sectionId(s.code)}>
+      <header>
+        <span class="code">{s.code}</span>
+        {s.central && <span class="pill">Central idea</span>}
+        <h2>{s.title}</h2>
+      </header>
+      <p>{s.description}</p>
+      <p class="reading">Reading: {readingLabel(s)}.</p>
+      <div class="actions">
+        <a class="btn primary" href={url(`/unit/${unit.nn}/standard/${i + 1}/`)}>Open standard</a>
+        <button class="btn ghost" type="button" data-present-section={sectionId(s.code)}>Present this section</button>
+      </div>
+    </section>
+  ))}
+
+  <section class="standard-block" data-section id="exam">
+    <h2>How the unit exam is built</h2>
+    <p class="note">Every question is tagged to one of the five standards above. 100 points.</p>
+    <table class="plain">
+      <thead><tr><th scope="col">Part</th><th scope="col">Points</th><th scope="col">What it tests</th></tr></thead>
+      <tbody>{unit.examBlueprint.map((r) => <tr><td>{r.part}</td><td>{r.points}</td><td>{r.tests}</td></tr>)}</tbody>
+    </table>
+  </section>
+</Layout>

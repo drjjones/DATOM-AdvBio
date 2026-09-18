@@ -1,0 +1,181 @@
+{
+  "number": 6,
+  "slug": "molecular-genetics",
+  "nn": "06",
+  "title": "Molecular genetics",
+  "titleAsPrinted": "Molecular Genetics",
+  "folder": "unit-06-molecular-genetics",
+  "accent": "#8E6FE0",
+  "accentName": "nucleotide violet",
+  "centralIdea": "B6.4",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B6.1 to B6.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B6.1 (2), B6.2 (1), B6.3 (2), B6.4 (1), B6.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B6.5 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B6.1: the DNA double helix, the replication fork, or translation at the ribosome"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B6.5 (the mutation passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-06-molecular-genetics/01_Overview_and_Planning/U6_Standards_Student_Copy.docx",
+    "teacher": "../unit-06-molecular-genetics/01_Overview_and_Planning/U6_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B6.1",
+      "title": "DNA structure",
+      "titleAsPrinted": "DNA Structure",
+      "central": false,
+      "description": "Students describe the structure of DNA and how it stores information.",
+      "iCan": [
+        "I can describe a nucleotide (phosphate, deoxyribose sugar, nitrogenous base) and that DNA is a polymer of nucleotides",
+        "I can describe the double helix: two antiparallel strands with a sugar-phosphate backbone outside and the paired bases inside",
+        "I can state the base-pairing rules (A with T, C with G), held by hydrogen bonds, so the two strands are complementary",
+        "I can explain that the base sequence is the stored information, and credit the Watson, Crick, and Franklin model (Franklin's X-ray data)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2, Q3; SA 11, 12; Part 4 Diagram",
+        "points": 31
+      },
+      "reading": [
+        {
+          "sections": "12.1",
+          "printedPages": "208 to 211",
+          "pdfPages": "227 to 230",
+          "chapter": 12,
+          "sectionTitle": "The Genetic Material"
+        }
+      ]
+    },
+    {
+      "code": "B6.2",
+      "title": "DNA replication",
+      "titleAsPrinted": "DNA Replication",
+      "central": false,
+      "description": "Students explain how DNA is copied accurately.",
+      "iCan": [
+        "I can explain that replication is semiconservative: each new molecule keeps one old strand and one new strand",
+        "I can name the key players: helicase unwinds, primase lays a primer, DNA polymerase adds nucleotides 5' to 3', ligase seals",
+        "I can explain that the leading strand is made continuously and the lagging strand in pieces (Okazaki fragments), because the strands are antiparallel",
+        "I can explain that proofreading and repair keep replication accurate, and each base pairs with its complement so the sequence is preserved"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q4, Q5, Q6; SA 13",
+        "points": 11
+      },
+      "reading": [
+        {
+          "sections": "12.2",
+          "printedPages": "211 to 216",
+          "pdfPages": "230 to 235",
+          "chapter": 12,
+          "sectionTitle": "Replication of DNA"
+        }
+      ]
+    },
+    {
+      "code": "B6.3",
+      "title": "Transcription",
+      "titleAsPrinted": "Transcription",
+      "central": false,
+      "description": "Students explain how a gene is transcribed into RNA.",
+      "iCan": [
+        "I can explain that transcription copies a gene's DNA into mRNA using RNA polymerase, with uracil in place of thymine",
+        "I can identify the promoter as where RNA polymerase binds and the template strand as the one that is read",
+        "I can explain eukaryotic RNA processing: a cap and tail are added, and introns are removed while exons are joined (splicing)",
+        "I can state that transcription happens in the nucleus and the finished mRNA leaves for the ribosomes"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q7, Q8; SA 14, 15",
+        "points": 14
+      },
+      "reading": [
+        {
+          "sections": "12.3 to 12.4",
+          "printedPages": "216 to 220",
+          "pdfPages": "235 to 239",
+          "chapter": 12,
+          "sectionTitle": "The Genetic Code of Life"
+        }
+      ]
+    },
+    {
+      "code": "B6.4",
+      "title": "Translation",
+      "titleAsPrinted": "Translation",
+      "central": true,
+      "description": "Students explain how mRNA is translated into a protein.",
+      "iCan": [
+        "I can explain that the ribosome reads mRNA in three-base codons, and the genetic code maps each codon to an amino acid (with start and stop codons)",
+        "I can explain that a tRNA carries a specific amino acid and has an anticodon that pairs with the codon",
+        "I can describe the steps: initiation, elongation (codon by codon, peptide bonds form), and termination at a stop codon",
+        "I can connect sequence to function: the codon sequence sets the amino acid sequence, which sets the protein's shape and job (back to Unit 2)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q9; SA 16",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "12.5",
+          "printedPages": "220 to 227",
+          "pdfPages": "239 to 246",
+          "chapter": 12,
+          "sectionTitle": "Second Step: Translation"
+        }
+      ]
+    },
+    {
+      "code": "B6.5",
+      "title": "Mutations",
+      "titleAsPrinted": "Mutations",
+      "central": false,
+      "description": "Students explain how changes in DNA affect proteins.",
+      "iCan": [
+        "I can define a mutation as a change in the DNA base sequence",
+        "I can distinguish substitutions (silent, missense, nonsense) from insertions and deletions (which cause frameshifts)",
+        "I can explain that a frameshift usually changes every codon downstream, so it is often more damaging than a substitution",
+        "I can explain that mutations are the ultimate source of new alleles and variation, and can be neutral, harmful, or beneficial"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q10; SA 17; Part 3 CER",
+        "points": 27
+      },
+      "reading": [
+        {
+          "sections": "13.3",
+          "printedPages": "238 to 243",
+          "pdfPages": "257 to 262",
+          "chapter": 13,
+          "sectionTitle": "Gene Mutations"
+        }
+      ]
+    }
+  ]
+}

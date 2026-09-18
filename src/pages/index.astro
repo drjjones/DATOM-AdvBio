@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { units, course, book } from '../lib/content';
+import { url } from '../lib/url';
+---
+<Layout title="Advanced Biology" description={`Interactive teaching site for Advanced Biology at ${course.school}: ten units, fifty standards, every one built around a model you can manipulate.`}>
+  <section class="hero">
+    <p class="eyebrow">{course.school} · {course.year} · {course.periodMinutes} minute periods</p>
+    <h1>Advanced Biology</h1>
+    <p class="lede">Ten units. Each standard opens with a question you can answer by moving something on the screen.</p>
+  </section>
+
+  <ol class="unit-grid" aria-label="Units in sequence">
+    {units.map((u) => {
+      const central = u.standards.find((s) => s.central)!;
+      return (
+        <li>
+          <a class="unit-card" href={url(`/unit/${u.nn}/`)} style={`--unit:${u.accent}`}>
+            <span class="unit-num">Unit {u.number}</span>
+            <span class="unit-title">{u.title}</span>
+            <span class="unit-meta">Central idea: {central.title.charAt(0).toLowerCase() + central.title.slice(1)}</span>
+            <span class="dots" role="img" aria-label={`${u.standards.length} standards`}>
+              {u.standards.map((s) => <span class="dot" data-progress-dot={s.code}></span>)}
+            </span>
+          </a>
+        </li>
+      );
+    })}
+  </ol>
+
+  <section class="lab-callout">
+    <a href={url('/lab/')}>Lab: 3D structures and simulations</a>
+    <p>Reusable models that the units draw on. The carbon allotropes gallery is the first.</p>
+  </section>
+
+  <p class="source">Readings follow {book.authors.join(' and ')}, <cite>{book.title}</cite>, {book.edition} ({book.publisher}, {book.year}). Progress dots are stored on this device only.</p>
+</Layout>

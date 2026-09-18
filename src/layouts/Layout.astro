@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import { url, basePath } from '../lib/url';
+interface Props {
+  title: string;
+  description?: string;
+  accent?: string;
+  bodyClass?: string;
+  noindex?: boolean;
+  unitLabel?: string;
+}
+const { title, description = 'Interactive, unit by unit teaching site for Advanced Biology at Maret School.', accent, bodyClass = '', noindex = false, unitLabel } = Astro.props;
+const path = Astro.url.pathname;
+const route = path.startsWith(basePath) ? `/${path.slice(basePath.length)}` : path;
+const isHome = route === '/';
+const isLab = route.startsWith('/lab');
+---
+<!doctype html>
+<html lang="en" data-theme="dark" style={accent ? `--unit:${accent}` : undefined}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="theme-color" content="#0f1216" />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="manifest" href={url('/manifest.webmanifest')} />
+    <script is:inline>
+      (function () { try { var t = localStorage.getItem('ab:theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+    </script>
+  </head>
+  <body class={bodyClass}>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header chrome">
+      {accent && <span class="unit-bar" aria-hidden="true"></span>}
+      <a class="brand" href={url('/')}>Advanced Biology</a>
+      <nav aria-label="Site">
+        <a href={url('/')} aria-current={isHome ? 'page' : undefined}>Units</a>
+        <a href={url('/lab/')} aria-current={isLab ? 'page' : undefined}>Lab</a>
+        {unitLabel && <a href={path} aria-current="page">{unitLabel}</a>}
+      </nav>
+      <span class="spacer"></span>
+      <div class="tools">
+        <button class="btn icon" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true" data-icon="moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true" data-icon="sun" hidden><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="btn" type="button" data-present-toggle aria-pressed="false" title="Presentation mode (P)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/></svg>
+          Present
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <div class="present-hud" role="group" aria-label="Presentation controls">
+      <button class="btn icon" type="button" data-present-prev aria-label="Previous section"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <span class="counter" data-present-counter aria-live="polite"></span>
+      <button class="btn icon" type="button" data-present-next aria-label="Next section"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      <button class="btn" type="button" data-present-exit aria-label="Exit presentation mode">Exit</button>
+    </div>
+    <script>
+      import '../scripts/shell';
+    </script>
+  </body>
+</html>

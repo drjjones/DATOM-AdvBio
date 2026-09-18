@@ -1,0 +1,181 @@
+{
+  "number": 3,
+  "slug": "energy-and-enzymes",
+  "nn": "03",
+  "title": "Energy and enzymes",
+  "titleAsPrinted": "Energy and Enzymes",
+  "folder": "unit-03-energy-and-enzymes",
+  "accent": "#E5673A",
+  "accentName": "ember orange",
+  "centralIdea": "B3.4",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B3.1 to B3.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B3.1 (3), B3.2 (1), B3.3 (1), B3.4 (1), B3.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B3.4 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B3.4: the activation-energy curve, ATP hydrolysis, or induced fit"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B3.4 (the enzyme passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-03-energy-and-enzymes/01_Overview_and_Planning/U3_Standards_Student_Copy.docx",
+    "teacher": "../unit-03-energy-and-enzymes/01_Overview_and_Planning/U3_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B3.1",
+      "title": "Energy and thermodynamics",
+      "titleAsPrinted": "Energy and Thermodynamics",
+      "central": false,
+      "description": "Students explain energy forms and the laws that govern energy in living systems.",
+      "iCan": [
+        "I can tell kinetic energy (motion, including heat) from potential energy (stored, including chemical energy in bonds)",
+        "I can define metabolism and tell anabolic pathways (build and store) from catabolic pathways (break down and release)",
+        "I can state the first law of thermodynamics (energy is conserved, not created or destroyed)",
+        "I can state the second law (entropy increases, some energy is lost as heat) and explain why cells need a constant energy input"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2, Q3; SA 11, 12, 13",
+        "points": 21
+      },
+      "reading": [
+        {
+          "sections": "6.1",
+          "printedPages": "101 to 103",
+          "pdfPages": "120 to 122",
+          "chapter": 6,
+          "sectionTitle": "Cells and the Flow of Energy"
+        }
+      ]
+    },
+    {
+      "code": "B3.2",
+      "title": "Free energy and spontaneity",
+      "titleAsPrinted": "Free Energy and Spontaneity",
+      "central": false,
+      "description": "Students use free energy to predict whether a reaction proceeds on its own.",
+      "iCan": [
+        "I can define free energy (G) and change in free energy (delta G)",
+        "I can tell exergonic reactions (release energy, negative delta G, spontaneous) from endergonic reactions (absorb energy, positive delta G)",
+        "I can explain why spontaneous does not mean fast",
+        "I can explain that reactions run toward equilibrium, and why a living cell avoids equilibrium"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q4, Q5; SA 14",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "6.2",
+          "printedPages": "103 to 104",
+          "pdfPages": "122 to 123",
+          "chapter": 6,
+          "sectionTitle": "Metabolic Reactions and Energy Transformations"
+        }
+      ]
+    },
+    {
+      "code": "B3.3",
+      "title": "ATP and energy coupling",
+      "titleAsPrinted": "ATP and Energy Coupling",
+      "central": false,
+      "description": "Students explain how ATP stores and delivers energy for cellular work.",
+      "iCan": [
+        "I can describe the parts of ATP: adenine, ribose, and three phosphate groups",
+        "I can explain that hydrolysis of ATP's last phosphate bond releases usable energy, forming ADP plus phosphate",
+        "I can explain energy coupling: how ATP hydrolysis drives reactions and cellular work",
+        "I can describe the ATP cycle: how ATP is recharged from ADP plus phosphate using energy from catabolism"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q6, Q7; SA 15",
+        "points": 9
+      },
+      "reading": [
+        {
+          "sections": "6.2",
+          "printedPages": "104 to 105",
+          "pdfPages": "123 to 124",
+          "chapter": 6,
+          "sectionTitle": "Metabolic Reactions and Energy Transformations"
+        }
+      ]
+    },
+    {
+      "code": "B3.4",
+      "title": "Enzymes",
+      "titleAsPrinted": "Enzymes",
+      "central": true,
+      "description": "Students explain how an enzyme's structure lets it speed up reactions, and what changes its rate.",
+      "iCan": [
+        "I can define an enzyme as a biological catalyst that speeds a reaction without being used up",
+        "I can explain that enzymes work by lowering activation energy, not by changing delta G",
+        "I can explain the active site, substrate specificity, and induced fit",
+        "I can explain how temperature, pH, and concentration change the rate, including an optimum and denaturation"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q8, Q9; SA 16; Part 3 CER; Part 4 Diagram",
+        "points": 44
+      },
+      "reading": [
+        {
+          "sections": "6.3",
+          "printedPages": "105 to 109",
+          "pdfPages": "124 to 128",
+          "chapter": 6,
+          "sectionTitle": "Metabolic Pathways and Enzymes"
+        }
+      ]
+    },
+    {
+      "code": "B3.5",
+      "title": "Enzyme regulation",
+      "titleAsPrinted": "Enzyme Regulation",
+      "central": false,
+      "description": "Students explain how cells control enzyme activity.",
+      "iCan": [
+        "I can tell a competitive inhibitor from a noncompetitive (allosteric) inhibitor",
+        "I can explain allosteric regulation: how a molecule at a regulatory site can turn an enzyme on or off",
+        "I can explain feedback inhibition: how a pathway's end product shuts down an earlier enzyme",
+        "I can explain that many enzymes need cofactors (inorganic) or coenzymes (organic, like vitamins)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q10; SA 17",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "6.3 to 6.4",
+          "printedPages": "105 to 113",
+          "pdfPages": "124 to 132",
+          "chapter": 6,
+          "sectionTitle": "Metabolic Pathways and Enzymes"
+        }
+      ]
+    }
+  ]
+}

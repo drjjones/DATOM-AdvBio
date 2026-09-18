@@ -1,0 +1,188 @@
+{
+  "number": 9,
+  "slug": "ecology",
+  "nn": "09",
+  "title": "Ecology",
+  "titleAsPrinted": "Ecology",
+  "folder": "unit-09-ecology",
+  "accent": "#8DB33A",
+  "accentName": "canopy moss",
+  "centralIdea": "B9.1",
+  "readingMapDerived": false,
+  "readingMapNote": null,
+  "examBlueprint": [
+    {
+      "part": "Multiple choice",
+      "points": "20 (10 x 2)",
+      "tests": "B9.1 to B9.5"
+    },
+    {
+      "part": "Short answer",
+      "points": "35 (7 x 5)",
+      "tests": "B9.1 (2), B9.2 (2), B9.3 (1), B9.4 (1), B9.5 (1)"
+    },
+    {
+      "part": "CER paragraph",
+      "points": "20",
+      "tests": "B9.1 content; scientific argument skill"
+    },
+    {
+      "part": "Diagram",
+      "points": "15",
+      "tests": "B9.3: the food web with trophic levels and the energy pyramid"
+    },
+    {
+      "part": "Source interpretation",
+      "points": "10",
+      "tests": "Interpreting scientific text; passage drawn from B9.1 (the population-growth passage)"
+    }
+  ],
+  "source": {
+    "student": "../unit-09-ecology/01_Overview_and_Planning/U9_Standards_Student_Copy.docx",
+    "teacher": "../unit-09-ecology/01_Overview_and_Planning/U9_Standards_Teacher_Copy.docx"
+  },
+  "standards": [
+    {
+      "code": "B9.1",
+      "title": "Population growth",
+      "titleAsPrinted": "Population Growth",
+      "central": true,
+      "description": "Students model how populations grow and what limits them.",
+      "iCan": [
+        "I can describe exponential growth (a J-shaped curve) as growth without limits, when resources are unlimited",
+        "I can describe logistic growth (an S-shaped curve) that levels off at the carrying capacity (K), the most a habitat can sustain",
+        "I can explain density-dependent factors (competition, disease, predation) versus density-independent factors (weather, disasters)",
+        "I can use a growth graph to identify the growth phase, the carrying capacity, and where growth slows"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q1, Q2, Q3; SA 11, 12; Part 3 CER",
+        "points": 36
+      },
+      "reading": [
+        {
+          "sections": "44.1 to 44.3",
+          "printedPages": "837 to 846",
+          "pdfPages": "856 to 865",
+          "chapter": 44,
+          "sectionTitle": "Scope of Ecology"
+        }
+      ]
+    },
+    {
+      "code": "B9.2",
+      "title": "Community ecology",
+      "titleAsPrinted": "Community Ecology",
+      "central": false,
+      "description": "Students explain how species interact in a community.",
+      "iCan": [
+        "I can define a community and an ecological niche, and state the competitive exclusion principle",
+        "I can describe the interspecific interactions: competition, predation and herbivory, and symbiosis (mutualism, commensalism, parasitism)",
+        "I can explain the role of a keystone species (an outsized effect on community structure)",
+        "I can describe ecological succession (primary and secondary) as the change in a community over time"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q4, Q5, Q6; SA 13, 14",
+        "points": 16
+      },
+      "reading": [
+        {
+          "sections": "45.1 to 45.2",
+          "printedPages": "856 to 868",
+          "pdfPages": "875 to 887",
+          "chapter": 45,
+          "sectionTitle": "Ecology of Communities"
+        }
+      ]
+    },
+    {
+      "code": "B9.3",
+      "title": "Ecosystems and energy flow",
+      "titleAsPrinted": "Ecosystems and Energy Flow",
+      "central": false,
+      "description": "Students trace energy through an ecosystem.",
+      "iCan": [
+        "I can tell apart producers, consumers (herbivores, carnivores, omnivores), and decomposers, and assign trophic levels",
+        "I can explain that energy enters as sunlight and flows one way, lost as heat at each step",
+        "I can state the roughly 10 percent rule and explain why food chains are short and an energy pyramid narrows upward",
+        "I can tell apart energy flow (one-way) from matter (recycled)"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q7, Q8; SA 15; Part 4 Diagram",
+        "points": 24
+      },
+      "reading": [
+        {
+          "sections": "45.3",
+          "printedPages": "868 to 874",
+          "pdfPages": "887 to 893",
+          "chapter": 45,
+          "sectionTitle": "Dynamics of an Ecosystem"
+        }
+      ]
+    },
+    {
+      "code": "B9.4",
+      "title": "Biogeochemical cycles",
+      "titleAsPrinted": "Biogeochemical Cycles",
+      "central": false,
+      "description": "Students explain how matter cycles through ecosystems.",
+      "iCan": [
+        "I can explain that, unlike energy, matter is recycled between organisms and the environment",
+        "I can describe the carbon cycle: photosynthesis fixes CO2, respiration and combustion release it",
+        "I can describe the nitrogen cycle: fixation by bacteria makes nitrogen usable, then it passes through organisms and decomposers",
+        "I can describe the water cycle, and explain how burning fossil fuels alters the carbon cycle"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q9; SA 16",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "45.3",
+          "printedPages": "874 to 880",
+          "pdfPages": "893 to 899",
+          "chapter": 45,
+          "sectionTitle": "Dynamics of an Ecosystem"
+        }
+      ]
+    },
+    {
+      "code": "B9.5",
+      "title": "Biomes, climate, and human impact",
+      "titleAsPrinted": "Biomes, Climate, and Human Impact",
+      "central": false,
+      "description": "Students relate biomes to climate and assess human impact.",
+      "iCan": [
+        "I can explain that climate (temperature and precipitation) is the main factor setting terrestrial biomes",
+        "I can describe the main aquatic zones briefly and that abiotic factors shape them",
+        "I can explain a major human impact accurately: greenhouse-gas driven climate change, habitat loss, or biodiversity decline",
+        "I can connect biodiversity to ecosystem stability and name a conservation or restoration strategy"
+      ],
+      "history": [],
+      "exam": {
+        "examItems": "MC Q10; SA 17",
+        "points": 7
+      },
+      "reading": [
+        {
+          "sections": "46.1 to 46.3",
+          "printedPages": "882 to 904",
+          "pdfPages": "901 to 923",
+          "chapter": 46,
+          "sectionTitle": "Climate and the Biosphere"
+        },
+        {
+          "sections": "47.3",
+          "printedPages": "911 to 916",
+          "pdfPages": "930 to 935",
+          "chapter": 47,
+          "sectionTitle": "Causes of Extinction"
+        }
+      ]
+    }
+  ]
+}
