@@ -12,11 +12,12 @@ let index = 0;
 const sections = () => Array.from(document.querySelectorAll<HTMLElement>('[data-section]'));
 const capture = () => document.querySelector<HTMLElement>('[data-present-capture]:not([hidden])');
 /** The capture element only takes the keys while the section that contains it is on screen. */
-const activeCapture = () => {
-  const c = capture();
-  if (!c) return null;
-  if (!sections().length) return c;
-  return c.closest('[data-section].is-active') ? c : null;
+const activeCapture = (): HTMLElement | null => {
+  if (!sections().length) return capture();
+  const active = document.querySelector<HTMLElement>('[data-section].is-active');
+  if (!active) return null;
+  if (active.matches('[data-present-capture]') && !active.hidden) return active;
+  return active.querySelector<HTMLElement>('[data-present-capture]:not([hidden])');
 };
 const counter = document.querySelector<HTMLElement>('[data-present-counter]');
 
@@ -28,6 +29,7 @@ function show(i: number) {
   if (counter) counter.textContent = `${index + 1} / ${list.length}`;
   const id = list[index].id;
   if (id) history.replaceState(null, '', `#${id}`);
+  list[index].dispatchEvent(new CustomEvent('present:section', { bubbles: true }));
   window.scrollTo(0, 0);
   window.dispatchEvent(new Event('resize'));
 }
@@ -38,7 +40,8 @@ export function enter(startId?: string) {
   const list = sections();
   let start = startId ? list.findIndex((el) => el.id === startId) : -1;
   if (start < 0 && location.hash) start = list.findIndex((el) => `#${el.id}` === location.hash);
-  if (start < 0) { const host = capture()?.closest<HTMLElement>('[data-section]'); if (host) start = list.indexOf(host); }
+  // An open widget (the carbon walkthrough) pulls the deck to its section; sections that merely step through parts do not.
+  if (start < 0) { const widget = document.querySelector<HTMLElement>('[data-present-capture]:not([hidden]):not([data-section])'); const host = widget?.closest<HTMLElement>('[data-section]'); if (host) start = list.indexOf(host); }
   show(start >= 0 ? start : 0);
   document.querySelectorAll('[data-present-toggle]').forEach((b) => b.setAttribute('aria-pressed', 'true'));
   html.requestFullscreen?.().catch(() => { /* fullscreen is a nicety; the mode works without it */ });
@@ -55,7 +58,12 @@ export function exit() {
 
 function step(dir: 1 | -1) {
   const c = activeCapture();
-  if (c) { c.dispatchEvent(new CustomEvent('present:step', { detail: dir, bubbles: true })); return; }
+  if (c) {
+    // A capture that handles the step calls preventDefault; otherwise the deck moves on.
+    const ev = new CustomEvent('present:step', { detail: dir, bubbles: true, cancelable: true });
+    c.dispatchEvent(ev);
+    if (ev.defaultPrevented) return;
+  }
   show(index + dir);
 }
 

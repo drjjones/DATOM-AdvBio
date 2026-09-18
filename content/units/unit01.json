@@ -1,0 +1,230 @@
+{
+  "unit": "01",
+  "standards": {
+    "B1.1": {
+      "model": "b11-bonding",
+      "hook": "Why does this molecule have a negative end and a positive end?",
+      "explain": [
+        "An atom is a nucleus of protons and neutrons with electrons in shells of two, then eight. Isotopes differ in neutrons; ions have gained or lost electrons and are charged. Outer electrons do the chemistry: hydrogen needs one more, oxygen two, nitrogen three, carbon four, and each forms that many bonds.",
+        "Sharing is rarely equal. Electronegativity is how hard an atom pulls on shared electrons. A small difference gives a nonpolar covalent bond (C to H, 0.35); a larger one a polar covalent bond (O to H, 1.24), electrons nearer oxygen, which turns partly negative while hydrogen turns partly positive; a very large one (Na to Cl, 2.23) moves the electron outright: ions.",
+        "Water's two polar bonds bend at 104.5 degrees, so the molecule has a negative end and a positive end. The positive hydrogen of one molecule is drawn to the negative oxygen of the next: a hydrogen bond."
+      ],
+      "cfu": [
+        {
+          "prompt": "Carbon has four electrons in its outer shell, which holds eight. How many covalent bonds does a carbon atom usually form?",
+          "options": [
+            "Two",
+            "Four",
+            "Eight"
+          ],
+          "answer": 1,
+          "right": "Four shared pairs bring the outer shell to eight. That is why carbon can build chains, rings, and branches.",
+          "wrong": "Count what is missing, not what is present. Carbon has four and needs eight, so it shares four pairs."
+        },
+        {
+          "prompt": "Set the bond to sodium and chlorine. Before you read the scale, predict what kind of bond it will show.",
+          "predict": true,
+          "options": [
+            "Nonpolar covalent",
+            "Polar covalent",
+            "Ionic"
+          ],
+          "answer": 2,
+          "right": "The difference is 2.23. Chlorine takes the electron outright, sodium becomes a positive ion, and the two are held by charge, not by sharing.",
+          "wrong": "Look at the electronegativity values: sodium 0.93, chlorine 3.16. A difference that large moves the electron entirely."
+        },
+        {
+          "prompt": "Water is bent, not straight. Why does that matter for its polarity?",
+          "options": [
+            "A bent shape makes the O to H bonds nonpolar",
+            "A bent shape keeps the two bond polarities from canceling, so the molecule has a negative end and a positive end",
+            "Shape has no effect on polarity"
+          ],
+          "answer": 1,
+          "right": "In a straight molecule like carbon dioxide the two polar bonds point in opposite directions and cancel. Water's bend leaves a net dipole.",
+          "wrong": "Compare with carbon dioxide in the explorer: its bonds are polar too, but the straight shape cancels them. Water's bend does not."
+        }
+      ]
+    },
+    "B1.2": {
+      "model": "b12-water",
+      "hook": "Every property of water on this page comes from one weak bond that breaks and re-forms billions of times a second.",
+      "explain": [
+        "Hydrogen bonds between water molecules are weak, but so many act at once that they set the behavior of the liquid. Cohesion is water holding to water: the surface resists breaking, and a water column can be pulled up a tree from its leaves. Adhesion is water holding to other polar surfaces, so it climbs narrow tubes and wets cell walls.",
+        "Heat goes first into breaking hydrogen bonds and only then into faster motion, so water warms and cools slowly, steadying oceans and body temperature. The fastest molecules escape as vapor with their energy, so what remains is cooler: sweat and transpiring leaves shed heat this way.",
+        "Water's charged ends pull ions and polar molecules apart into solution, so blood carries so much. Below zero the molecules lock into an open lattice, each bonded to four neighbors at arm's length, so ice takes more room than liquid water and floats."
+      ],
+      "cfu": [
+        {
+          "prompt": "Raise the temperature from 20 to 90 degrees in the simulation. Predict what happens to the number of hydrogen bonds per molecule.",
+          "predict": true,
+          "options": [
+            "It rises, because the molecules collide more often",
+            "It falls, because faster molecules break bonds faster than they form",
+            "It stays the same, because the number of molecules is fixed"
+          ],
+          "answer": 1,
+          "right": "Faster molecules pull apart before a bond has time to set. The readout drops as the temperature climbs.",
+          "wrong": "Watch the dashed lines while you raise the slider. More collisions, but far fewer bonds hold."
+        },
+        {
+          "prompt": "Why does ice float on liquid water?",
+          "options": [
+            "Ice contains trapped air",
+            "Frozen water forms an open lattice with more space between molecules, so it is less dense",
+            "Cold water is always less dense than warm water"
+          ],
+          "answer": 1,
+          "right": "Each molecule bonds to four neighbors at a fixed distance. The lattice has about nine percent more room than the liquid.",
+          "wrong": "Switch the simulation to ice and read the density. The lattice spreads the molecules out."
+        },
+        {
+          "prompt": "A dog pants and a leaf transpires. Which property is doing the cooling?",
+          "options": [
+            "High specific heat",
+            "Evaporative cooling",
+            "Cohesion"
+          ],
+          "answer": 1,
+          "right": "The fastest molecules leave as vapor and take their energy with them. What stays behind is cooler.",
+          "wrong": "Specific heat slows temperature change; it does not remove heat. Evaporation does."
+        }
+      ]
+    },
+    "B1.3": {
+      "model": "b13-ph",
+      "hook": "Each step on this scale is ten times the last.",
+      "explain": [
+        "pH is the negative logarithm of the hydrogen ion concentration, so each pH unit is a factor of ten: pH 3 has ten times the hydrogen ions of pH 4 and a thousand times those of pH 6. Water itself splits slightly into H+ and OH-; equal amounts mean pH 7.",
+        "Acids release hydrogen ions; bases accept them or release hydroxide. A strong acid such as hydrochloric acid comes apart completely. A weak acid such as carbonic or acetic acid comes apart only partly and settles at an equilibrium, holding most of its hydrogen in reserve.",
+        "That reserve makes a buffer. Pair a weak acid with its partner base: added hydrogen ions are absorbed by the base, and removed ones are replaced by the acid. Blood is buffered by carbonic acid and bicarbonate and stays between pH 7.35 and 7.45; outside that band proteins change shape and enzymes stop."
+      ],
+      "cfu": [
+        {
+          "prompt": "Add three drops of acid to pure water, then three drops to the bicarbonate buffer. Predict which pH moves further.",
+          "predict": true,
+          "options": [
+            "The buffer, because it already contains an acid",
+            "Pure water, because nothing in it absorbs the added hydrogen ions",
+            "Both move the same amount"
+          ],
+          "answer": 1,
+          "right": "Pure water has no partner base. In the buffer, bicarbonate takes the hydrogen ions and the pH barely moves.",
+          "wrong": "Watch the two traces on the chart. The unbuffered line drops several units; the buffered one shifts a fraction."
+        },
+        {
+          "prompt": "How many times more hydrogen ions are in a solution at pH 2 than in one at pH 5?",
+          "options": [
+            "3 times",
+            "30 times",
+            "1000 times"
+          ],
+          "answer": 2,
+          "right": "Three pH units is three factors of ten: 10 times 10 times 10.",
+          "wrong": "The scale is logarithmic. Each unit is a factor of ten, so three units is ten cubed."
+        },
+        {
+          "prompt": "What is in a buffer that lets it soak up added hydrogen ions?",
+          "options": [
+            "A large amount of pure water",
+            "A weak acid together with its partner base, such as carbonic acid with bicarbonate",
+            "A strong acid that reacts with the added acid"
+          ],
+          "answer": 1,
+          "right": "The base half takes hydrogen ions when they arrive; the acid half releases them when they are removed.",
+          "wrong": "Water alone has nothing to absorb hydrogen ions. The partner base does the work."
+        }
+      ]
+    },
+    "B1.4": {
+      "model": "b14-carbon",
+      "hook": "Four bonds. That single fact is why life is built on carbon.",
+      "explain": [
+        "Carbon has four outer electrons and makes four covalent bonds, to other carbons as readily as to anything else, so it builds chains, branches, rings, and double bonds. Isomers, the same atoms arranged differently, behave differently.",
+        "The skeleton sets the shape; the functional groups on it set the chemistry. Hydroxyl makes a molecule polar and soluble. Carbonyl marks sugars. Carboxyl gives up a hydrogen ion and acts as an acid; amino takes one and acts as a base. Phosphate carries negative charge and stored energy. Methyl is nonpolar and often a tag. Sulfhydryl groups cross-link proteins.",
+        "Cells join monomers by dehydration synthesis, removing water where the bond forms, and split them by hydrolysis, adding it back. In 1953 Miller and Urey sparked a flask of water vapor, methane, ammonia, and hydrogen and got amino acids: building blocks form without life. It did not show how life began."
+      ],
+      "cfu": [
+        {
+          "prompt": "In the explorer, replace the methyl group with a hydroxyl group. Predict whether the molecule becomes more or less soluble in water.",
+          "predict": true,
+          "options": [
+            "More soluble, because the hydroxyl group is polar and hydrogen bonds with water",
+            "Less soluble, because oxygen is heavier than carbon",
+            "No change, because the carbon skeleton is the same"
+          ],
+          "answer": 0,
+          "right": "The O to H bond is polar, so water molecules can hydrogen bond to it. Propane barely dissolves; ethanol mixes completely.",
+          "wrong": "Read the polarity line under the model. Methyl is nonpolar; hydroxyl is polar and hydrogen bonds with water."
+        },
+        {
+          "prompt": "What leaves when two monomers are joined by dehydration synthesis?",
+          "options": [
+            "A carbon atom",
+            "A molecule of water",
+            "A hydrogen ion only"
+          ],
+          "answer": 1,
+          "right": "A hydroxyl from one monomer and a hydrogen from the other come off as water, and a new covalent bond forms.",
+          "wrong": "Step through the builder: an OH and an H combine, and the water leaves as the bond forms."
+        },
+        {
+          "prompt": "What did the Miller and Urey experiment show?",
+          "options": [
+            "That life arose in their flask",
+            "That amino acids and other building blocks can form from simple gases and energy, without any living thing",
+            "That the early atmosphere was exactly water, methane, ammonia, and hydrogen"
+          ],
+          "answer": 1,
+          "right": "Building blocks formed abiotically. That is all the experiment claims, and it is a great deal.",
+          "wrong": "The flask made building blocks, not life, and the atmosphere they modeled is now thought to be wrong. The abiotic result is the finding."
+        }
+      ]
+    },
+    "B1.5": {
+      "model": "b15-macro",
+      "hook": "Four families of giant molecules, one rule: shape decides the job.",
+      "explain": [
+        "Carbohydrates are chains of sugars. Glucose units joined by alpha linkages coil into starch and glycogen, compact energy stores our enzymes open easily. Joined by beta linkages, every other unit flips, the chains run straight and hydrogen bond into cellulose sheets, strong cell walls we cannot digest.",
+        "Lipids are mostly hydrocarbon and avoid water. A saturated fatty acid is straight and packs tightly, so the fat is solid; a cis double bond kinks the chain, packing fails, and the fat is liquid. Phospholipids have a charged head and two tails, so in water they form every membrane's bilayer.",
+        "Proteins are chains of amino acids whose sequence sets how the chain folds into a working shape. Heat or the wrong pH unfolds it, and the function goes. In DNA two antiparallel strands pair A with T and G with C, so each strand is a template for copying the other."
+      ],
+      "cfu": [
+        {
+          "prompt": "Switch the fatty acid from saturated to unsaturated. Predict whether a membrane made of it becomes more or less fluid.",
+          "predict": true,
+          "options": [
+            "More fluid, because the kinked tails cannot pack tightly",
+            "Less fluid, because the double bond is stiffer",
+            "No change, because the chain length is the same"
+          ],
+          "answer": 0,
+          "right": "The kink holds neighboring tails apart, so they slide past each other more easily. Fish in cold water carry more unsaturated tails for exactly this reason.",
+          "wrong": "Look at the packing view: the straight chains sit flush, the kinked ones leave gaps. Gaps mean fluidity."
+        },
+        {
+          "prompt": "You heat an enzyme until it stops working. What was lost first?",
+          "options": [
+            "Its amino acids, which break off",
+            "Its folded shape, which the function depended on",
+            "Its carbon atoms"
+          ],
+          "answer": 1,
+          "right": "The sequence is intact; the fold is not. Slide the helix to denatured and the working shape is gone.",
+          "wrong": "Heat does not remove atoms from the chain. It unfolds the chain, and the shape was the function."
+        },
+        {
+          "prompt": "Starch and cellulose are both chains of glucose. What makes one digestible and the other not?",
+          "options": [
+            "Cellulose uses a different sugar",
+            "The linkage between units: alpha in starch, beta in cellulose, so the chains have different shapes and our enzymes fit only one",
+            "Cellulose chains are much shorter"
+          ],
+          "answer": 1,
+          "right": "Same monomer, different bond geometry, different shape. Enzymes are shape specific, so ours open starch and not cellulose.",
+          "wrong": "Toggle the linkage in the carbohydrate view. The units are identical; only the bond angle and the resulting shape change."
+        }
+      ]
+    }
+  }
+}

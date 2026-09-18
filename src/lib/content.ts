@@ -43,3 +43,12 @@ export function examSummary(unit: Unit, s: Standard): string[] {
   }
   return out;
 }
+
+export interface Cfu { prompt: string; predict?: boolean; options: string[]; answer: number; right: string; wrong: string }
+export interface StandardContent { model: string; hook: string; explain: string[]; cfu: Cfu[] }
+export interface UnitContent { unit: string; standards: Record<string, StandardContent> }
+const unitContentFiles = import.meta.glob('../../content/units/unit*.json', { eager: true, import: 'default' }) as Record<string, UnitContent>;
+/** Teaching content (hook, explanation, questions, model id) for a unit, if it has been built. */
+export function unitContent(nn: string): UnitContent | null {
+  return Object.values(unitContentFiles).find((u) => u.unit === nn) ?? null;
+}

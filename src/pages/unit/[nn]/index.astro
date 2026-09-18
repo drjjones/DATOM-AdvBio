@@ -1,26 +1,31 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { units, sectionId, readingLabel, chaptersFor, type Unit } from '../../../lib/content';
+import StandardSection from '../../../components/StandardSection.astro';
+import { units, sectionId, readingLabel, chaptersFor, unitContent, type Unit } from '../../../lib/content';
 import { url } from '../../../lib/url';
 
 export function getStaticPaths() {
   return units.map((u) => ({ params: { nn: u.nn }, props: { unit: u } }));
 }
 const { unit } = Astro.props as { unit: Unit };
+const content = unitContent(unit.nn);
 const central = unit.standards.find((s) => s.central)!;
 const chs = chaptersFor(unit);
 const chapterLabel = chs.length ? `Mader ${chs.length === 1 ? 'chapter' : 'chapters'} ${chs.map((c) => c.number).join(', ')}` : '';
 const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
 ---
 <Layout title={`Unit ${unit.number}: ${unit.title}`} description={`${unit.title}. Five standards; the central idea is ${central.code}, ${central.title}.`} accent={unit.accent} unitLabel={`Unit ${unit.number}`}>
+  {content && <canvas id="gl" class="gl-backdrop" aria-hidden="true" data-unit={unit.nn}></canvas>}
   <section class="masthead" data-section id="overview">
     <p class="k k-c">Unit {unit.nn} · {chapterLabel}</p>
     <h1>{unit.title}</h1>
     <p class="lede">Five standards. The central idea is {central.code}, {lower(central.title)}.</p>
-    <p class="note">The interactive models for this unit are in production. The standards, readings, and checklists below are live.</p>
+    {!content && <p class="note">The interactive models for this unit are in production. The standards, readings, and checklists below are live.</p>}
   </section>
 
-  {unit.standards.map((s, i) => (
+  {unit.standards.map((s, i) => content?.standards[s.code] ? (
+    <StandardSection unit={unit} standard={s} k={i + 1} content={content.standards[s.code]} />
+  ) : (
     <section class="std" data-section id={sectionId(s.code)}>
       <div class="drule" aria-hidden="true"></div>
       <header class="std-head">
@@ -52,4 +57,10 @@ const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
       <tbody>{unit.examBlueprint.map((r) => <tr><td>{r.part}</td><td>{r.points}</td><td class="body">{r.tests}</td></tr>)}</tbody>
     </table>
   </section>
+
+  {content && <script>import '../../../units/index';</script>}
 </Layout>
+
+<style is:global>
+  .gl-backdrop { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+</style>

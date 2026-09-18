@@ -102,7 +102,7 @@ export class Walkthrough {
       else if (b.hasAttribute('data-wt-exit')) this.stop();
       else if (b.dataset.option !== undefined) this.answer(Number(b.dataset.option));
     });
-    root.addEventListener('present:step', (e) => { ((e as CustomEvent<number>).detail > 0 ? this.next() : this.prev()); });
+    root.addEventListener('present:step', (e) => { e.preventDefault(); ((e as CustomEvent<number>).detail > 0 ? this.next() : this.prev()); });
   }
 
   start(index = 0) {

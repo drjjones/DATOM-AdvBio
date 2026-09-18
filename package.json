@@ -10,7 +10,8 @@
     "lighthouse": "node scripts/lighthouse.mjs",
     "screenshots": "node scripts/screenshots.mjs",
     "fallbacks": "node scripts/render-fallbacks.mjs",
-    "check:no-webgl": "node scripts/check-no-webgl.mjs"
+    "check:no-webgl": "node scripts/check-no-webgl.mjs",
+    "check:unit": "node scripts/check-unit.mjs"
   },
   "keywords": [],
   "author": "",

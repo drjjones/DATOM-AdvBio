@@ -1,0 +1,74 @@
+---
+/**
+ * One standard as a teaching section: hook sentence with the live visual, the model's controls,
+ * a short explanation, a check for understanding, and the "I can" checklist. Deep linkable; presentable.
+ */
+import { sectionId, readingLabel, type Unit, type Standard } from '../lib/content';
+import { url } from '../lib/url';
+export interface Cfu { prompt: string; predict?: boolean; options: string[]; answer: number; right: string; wrong: string }
+export interface StandardContent { model: string; hook: string; explain: string[]; cfu: Cfu[] }
+interface Props { unit: Unit; standard: Standard; k: number; content: StandardContent; standalone?: boolean }
+const { unit, standard: s, k, content, standalone = false } = Astro.props;
+const id = sectionId(s.code);
+const letters = ['A', 'B', 'C', 'D'];
+---
+<section class="std std-full" data-section id={id} data-present-capture data-parts>
+  <div class="drule" aria-hidden="true"></div>
+  <header class="std-head">
+    <div class="tags">
+      <span class="status-box unit">{s.code}</span>
+      {s.central && <span class="status-box signal">Central idea</span>}
+    </div>
+    <span class="k read">{readingLabel(s)}</span>
+    <h2>{s.title}</h2>
+  </header>
+
+  <div class="part" data-part="hook">
+    <p class="hook">{content.hook}</p>
+    <div class="model" data-model={content.model} data-standard={s.code}>
+      <div class="model-stage" data-stage></div>
+    </div>
+  </div>
+
+  <div class="part" data-part="model">
+    <div class="model-controls" data-controls-for={content.model}></div>
+  </div>
+
+  <div class="part" data-part="explain">
+    <h3>Explain it</h3>
+    {content.explain.map((p) => <p>{p}</p>)}
+  </div>
+
+  <div class="part" data-part="check">
+    <h3>Check for understanding</h3>
+    <ol class="cfu" data-cfu={s.code}>
+      {content.cfu.map((q, qi) => (
+        <li class="cfu-q" data-q={qi} data-answer={q.answer}>
+          <p class="cfu-prompt">{q.predict && <span class="status-box signal">Predict</span>} <span>{q.prompt}</span></p>
+          <div class="cfu-options" role="group" aria-label="Answer choices">
+            {q.options.map((opt, oi) => (
+              <button class="choice" type="button" data-option={oi}><span class="step-index" aria-hidden="true">{letters[oi]}</span><span>{opt}</span></button>
+            ))}
+          </div>
+          <p class="cfu-feedback" data-feedback aria-live="polite" data-right={q.right} data-wrong={q.wrong}></p>
+        </li>
+      ))}
+    </ol>
+  </div>
+
+  <div class="part" data-part="ladder">
+    <h3>What you should be able to do</h3>
+    <ul class="checklist">
+      {s.iCan.map((line, i) => (
+        <li>
+          <input type="checkbox" id={`ican-${id}-${i}`} data-ican={`${s.code}:${i}`} />
+          <label for={`ican-${id}-${i}`}>{line}</label>
+        </li>
+      ))}
+    </ul>
+    <div class="actions">
+      {!standalone && <a class="btn sec" href={url(`/unit/${unit.nn}/standard/${k}/`)}>Open this standard alone</a>}
+      <button class="btn sec" type="button" data-present-section={id}>Present this section</button>
+    </div>
+  </div>
+</section>

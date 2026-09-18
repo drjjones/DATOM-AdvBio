@@ -6,6 +6,7 @@ type Env = 'dark' | 'paper';
 function apply(env: Env) {
   if (env === 'dark') html.setAttribute('data-env', 'dark'); else html.removeAttribute('data-env');
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', env === 'dark' ? '#101823' : '#F7F9FA');
+  document.dispatchEvent(new CustomEvent('env:change', { detail: env }));
   const next: Env = env === 'dark' ? 'paper' : 'dark';
   document.querySelectorAll<HTMLButtonElement>('[data-env-toggle]').forEach((b) => {
     b.setAttribute('aria-label', `Switch to the ${next} environment`);

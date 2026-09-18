@@ -1,12 +1,14 @@
 ---
 import Layout from '../../../../layouts/Layout.astro';
-import { units, sectionId, examSummary, type Unit, type Standard } from '../../../../lib/content';
+import StandardSection from '../../../../components/StandardSection.astro';
+import { units, sectionId, examSummary, unitContent, type Unit, type Standard } from '../../../../lib/content';
 import { url } from '../../../../lib/url';
 
 export function getStaticPaths() {
   return units.flatMap((u) => u.standards.map((s, i) => ({ params: { nn: u.nn, k: String(i + 1) }, props: { unit: u, standard: s, k: i + 1 } })));
 }
 const { unit, standard: s, k } = Astro.props as { unit: Unit; standard: Standard; k: number };
+const content = unitContent(unit.nn)?.standards[s.code] ?? null;
 const prev = k > 1 ? unit.standards[k - 2] : null;
 const next = k < unit.standards.length ? unit.standards[k] : null;
 const exam = examSummary(unit, s);
@@ -14,30 +16,32 @@ const examLine = exam.length ? exam.join(', ').replace(/, ([^,]*)$/, ' and $1') 
 const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
 ---
 <Layout title={`${s.code} ${s.title}`} description={s.description} accent={unit.accent} unitLabel={`Unit ${unit.number}`}>
-  <section class="masthead" data-section id={sectionId(s.code)}>
+  {content && <canvas id="gl" class="gl-backdrop" aria-hidden="true" data-unit={unit.nn}></canvas>}
+  <section class="masthead" data-section id="top">
     <p class="k k-c"><a href={url(`/unit/${unit.nn}/`)}>Unit {unit.nn} · {unit.title}</a> · standard {k} of {unit.standards.length}</p>
-    <div class="tags">
-      <span class="status-box unit">{s.code}</span>
-      {s.central && <span class="status-box signal">Central idea</span>}
-    </div>
-    <h1>{s.title}</h1>
+    {!content && <div class="tags"><span class="status-box unit">{s.code}</span>{s.central && <span class="status-box signal">Central idea</span>}</div>}
+    {!content && <h1>{s.title}</h1>}
     <p class="lede">{s.description}</p>
-    <p class="note">The interactive model for this standard is in production.</p>
+    {!content && <p class="note">The interactive model for this standard is in production.</p>}
   </section>
 
-  <section class="std" data-section id="i-can">
-    <div class="drule" aria-hidden="true"></div>
-    <h2>What you should be able to do</h2>
-    <p class="note">Tick what is true today. The blank ones are your study list. Ticks are stored on this device only.</p>
-    <ul class="checklist">
-      {s.iCan.map((line, i) => (
-        <li>
-          <input type="checkbox" id={`ican-${i}`} data-ican={`${s.code}:${i}`} />
-          <label for={`ican-${i}`}>{line}</label>
-        </li>
-      ))}
-    </ul>
-  </section>
+  {content ? (
+    <StandardSection unit={unit} standard={s} k={k} content={content} standalone />
+  ) : (
+    <section class="std" data-section id="i-can">
+      <div class="drule" aria-hidden="true"></div>
+      <h2>What you should be able to do</h2>
+      <p class="note">Tick what is true today. The blank ones are your study list. Ticks are stored on this device only.</p>
+      <ul class="checklist">
+        {s.iCan.map((line, i) => (
+          <li>
+            <input type="checkbox" id={`ican-${i}`} data-ican={`${s.code}:${i}`} />
+            <label for={`ican-${i}`}>{line}</label>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <section class="std" data-section id="reading">
     <div class="drule" aria-hidden="true"></div>
@@ -51,13 +55,16 @@ const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
       ))}
       {examLine && <div class="spec-line"><span class="sl-label">On the unit exam</span><span class="sl-fill"></span><span class="sl-value body">{cap(examLine)}</span></div>}
     </div>
-    <div class="actions">
-      <button class="btn sec" type="button" data-present-section={sectionId(s.code)}>Present this standard</button>
-    </div>
   </section>
 
   <nav class="pager" aria-label="Standards in this unit">
     {prev ? <a class="action" href={url(`/unit/${unit.nn}/standard/${k - 1}/`)}>Previous, {prev.code}</a> : <a class="action" href={url(`/unit/${unit.nn}/`)}>Unit overview</a>}
     {next ? <a class="action" href={url(`/unit/${unit.nn}/standard/${k + 1}/`)}>Next, {next.code}</a> : <a class="action" href={url(`/unit/${unit.nn}/#exam`)}>Exam blueprint</a>}
   </nav>
+
+  {content && <script>import '../../../../units/index';</script>}
 </Layout>
+
+<style is:global>
+  .gl-backdrop { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+</style>

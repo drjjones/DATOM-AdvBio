@@ -21,25 +21,8 @@ export const COLORS = {
   dash: '#9aa4b2',
 } as const;
 
-export interface Structure {
-  id: string;
-  name: string;
-  subtitle: string;
-  positions: Float32Array;
-  bonds: Array<[number, number]>;
-  degree: Uint8Array;
-  /** Bulk bond count for a crystalline model. Edge atoms cut by the model boundary keep the bulk color. */
-  bulkDegree?: number;
-  atomColors: string[];
-  bondColors?: string[];
-  /** Ordered atom indices of faces to fill (the twelve C60 pentagons). */
-  faces?: number[][];
-  /** Atom pairs joined by a dashed line (graphite interlayer spacing). */
-  dashed?: Array<[number, number]>;
-  tilt: [number, number, number];
-  radius: number;
-  facts: string[];
-}
+import type { Structure } from '../../lib/mol/viewer';
+export type { Structure };
 
 type P3 = [number, number, number];
 
@@ -80,7 +63,7 @@ function prune(pts: P3[], maxBond: number, minDegree: number): P3[] {
 function colorByDegree(deg: Uint8Array): string[] {
   return Array.from(deg, (d) => (d >= 4 ? COLORS.sp3 : d === 3 ? COLORS.sp2 : COLORS.low));
 }
-function finish(base: Omit<Structure, 'positions' | 'bonds' | 'degree' | 'atomColors' | 'radius'> & { atomColors?: string[] }, pts: P3[], maxBond: number): Structure {
+function finish(base: Omit<Structure, 'positions' | 'bonds' | 'degree' | 'atomColors' | 'radius'> & { atomColors?: string[]; bulkDegree?: number }, pts: P3[], maxBond: number): Structure {
   const positions = toArray(pts);
   const bonds = bondsWithin(positions, maxBond);
   const degree = degrees(pts.length, bonds);

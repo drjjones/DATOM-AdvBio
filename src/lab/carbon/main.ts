@@ -1,4 +1,4 @@
-import { MultiViewer, type Tile } from './viewer';
+import { MultiViewer, type Tile } from '../../lib/mol/viewer';
 import { diamond, graphite, graphene, c60, nanotube, amorphous, type Structure } from './structures';
 import { Walkthrough, STEPS } from './walkthrough';
 

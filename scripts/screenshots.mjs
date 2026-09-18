@@ -11,7 +11,11 @@ const shots = [
   ['carbon', '/lab/carbon-allotropes/'],
   ['carbon-walkthrough-4', '/lab/carbon-allotropes/#walkthrough-4'],
   ['unit01', '/unit/01/'],
+  ['standard-b1-1', '/unit/01/standard/1/'],
   ['standard-b1-2', '/unit/01/standard/2/'],
+  ['standard-b1-3', '/unit/01/standard/3/'],
+  ['standard-b1-4', '/unit/01/standard/4/'],
+  ['standard-b1-5', '/unit/01/standard/5/'],
   ['lab', '/lab/'],
 ];
 mkdirSync('screenshots', { recursive: true });
