@@ -24,3 +24,10 @@ for (const m of models) {
   if (init) init(m, controls, viewer);
   else if (needs3D.has(id) && !viewer) m.querySelector('[data-stage]')?.append(webglNotice());
 }
+
+// The models mount after the browser's own fragment scroll and push the page down, so land on the
+// deep-linked section again once everything is in place. Presentation mode manages its own position.
+if (location.hash && !document.documentElement.classList.contains('presenting') && !new URLSearchParams(location.search).has('present')) {
+  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: 'auto' }));
+}
